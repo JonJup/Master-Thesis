@@ -1,1 +1,2 @@
-This folder contains the manuscript
+This folder contains the .tex files and the .bib library file. 
+
