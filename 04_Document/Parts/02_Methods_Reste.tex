@@ -1,0 +1,199 @@
+ Methoden Restekiste 
+ 
+ % A demonstration of each response type along one gradient is shown in figure \ref{fig:1d-responsetypes}.\\
+ % Figure: Nebeneinander anstatt als wrap 
+ % 
+ %	\begin{figure}[h]
+ %		\centering
+ %	\includegraphics[width=0.7\linewidth]{../02_Figures/05_Modelle/1d}
+ %	\caption{The four response types on one environmental gradients. Each color represents a separate species.}
+ %	\label{fig:1d-responsetypes}
+ %	\end{figure}
+ 
+ % Why these responses ?
+ 
+ %LL12 p pdf 10  Austin 2002 für Unimodal + Oksanen und Minchin 2002 
+ % Unimodal species responses -> Grundlage (Quelle) Fundamental Realized (Qulle) angezweifelt (Austin, Oksanen minichin). 
+ %Bimodal kann wegen Konkurenz am Optimum, Bild, Linear kurze Aufnahme des Gradienten; logisitsch -> carrying capacity,
+ %Unimodal responses to environmental gradients are a central tenet of ecology (QUELLE), deduced from the fundamental niche concept (Quelle), and are empirically supported (Oksanen). Linear responses to a gradient can arise, if the sampled range on the gradient is small, compared to the species' response range. Logistic responses could occur if a second factor limits the growth (e.g. carrying capacity (Quelle)) without influencing the response of the first. As for linear responses, the sampled range need be smaller than the rage over which the response is expressed. Lastly, bimodal responses can occur if a species is driven away from is optimum by a competitor. 
+ 
+ 
+ %\begin{table}
+ %\centering
+ %
+ %\begin{tabular}{cc}
+ %	\hline 
+ %	Response Type  & Number of species \\ 
+ %	\hline 
+ %	Uni-Uni & 9 \\ 
+ %
+ %	Uni-Li & 5 \\ 
+ % 
+ %	Uni-Lo & 9 \\ 
+ %
+ %	Uni-Bi & 9 \\ 
+ %
+ %	Li-Li & 9 \\ 
+ %
+ %	Li-Lo & 5 \\ 
+ %
+ %	Li-Bi & 5 \\ 
+ %
+ %	Lo-Lo & 9 \\ 
+ %
+ %	Lo-Bi & 9 \\ 
+ % 
+ %	Bi-Bi & 9 \\ 
+ %
+ %\end{tabular} 
+ %\caption{How many species are simulated for a given response type combination}
+ %\label{table:ResponseTypeCombinations}
+ %\end{table}
+ 
+ 
+ %%% --- Restekiste --- %%% 
+ %A multivariate generalized linear models ($GLM_{mv}$), as implemented in the R-package mvabund \citep{Wang2012}, fits a separate %generalized linear model ($GLM$) to each taxon.
+ %A test statistic for the whole community is obtained by adding the likelihood ratios of the individual models. 
+ %By adding the likelihood ratios of these individual models, one obtains a sum-of-Likelihood-Ratios statistic ($\Sigma LR$).
+ Simply adding the individual statistics assumes independent response variables, which ignores species correlation. 
+  how are the p-values calculated 
+ The p-values, which are calculated    
+ The $\Sigma LR$ allows for inference about the response of the community as a whole to the predictor
+ 
+ 	The algorithm to calculate species and site scores consists of six steps:\\
+ 	 i.) Assign arbitrary site scores to $\mathbf{Z}$. \\
+ 	 ii.) Calculate species scores $\mathbf{u}$ using Eqn. \ref{eq:CCA_species_scores}.\\
+ 	iii.) Calculate site scores $\mathbf{Z}_{wa}$ using Eqn. \ref{eq:CCA_site_scores}.\\
+ 	iv.) Conduct a weighted linear regression of $\mathbf{Z}_{wa}$ on $\mathbf{X}$ using $\mathbf{\alpha}$.\\
+ 	v.) Calculate and standardize new site scores $\mathbf{Z}$, with $\mathbf{Z} = \mathbf{X} \mathbf{\alpha}$.\\
+ 	vi). Stop on convergence, else go back to step 2.\\
+ 
+ 
+ -------------------------------%
+ %%% ----  Restekiste  ---- %%%% 
+ -------------------------------%
+ 
+ -----------------%
+ %% --- RDA --- %%%
+ -----------------%
+ 
+ 	Redundancy Analysis (RDA) \citep{rao1964use} and Canonical Correspondence Analysis (see section \ref{subsec:CCA}) are asymmetrical canonical analyses. Also known as direct gradient analyses, these techniques require two different kinds matrices: a response matrix $\mathbf{Y}$ and an explanatory matrix $\mathbf{X}$.
+ 
+ 	%% -- Intro to RDA -- %% 
+ 
+ %	In an RDA, a multiple linear regression for each column $i$ in $1\ ...\ p $ of $\mathbf{Y}$, $\mathbf{Y_i}$ by $\mathbf{X}$ is conducted to obtain a matrix of fitted values $\mathbf{\hat{Y}}$. A principle component analysis extracts the axes of maximum variance from $\mathbf{\hat{Y}}$. The values in $\mathbf{\hat{Y}}$, as well as the principal components are linear combinations of the explanatory variables in $\mathbf{X}$.\\
+ %	RDA preservers the Euclidean distance among objects in $\mathbf{Y}$.
+ %	The Euclidean distance treats jointly absent species (double zeros) the same as jointly present ones. This property is known as symmetry and can entail situations where sites that share no species are more similar than sites that share some (species abundance paradox), which is not plausible in ecological settings \citep{Legendre2012}.\\
+ %	Further, RDA assumes a linear relationship between $\mathbf{X}$ and $\mathbf{Y}$. This is plausible for short gradients leading up to or away from the optimum of a species, but not long gradient, covering the whole range of a species response.  
+ 
+ %%--------------%%%%
+  ---- CAO/CQO ---- %
+ %%--------------%%%%
+ 
+  Additive Einleitung  
+ 	Additive models use smooth functions in the linear predictor to relate response to predictor. Each predictor variable can be 		%   modelled by a different smooth. Generalized Additive Models (GAMs) use linear predictor, link function and error structure in the %   same way as GLMs to relate response to predictor (see Eq. \ref{GAM})
+ 	\begin{equation}\label{GAM}
+ 		g(\mu(x_{ij})) = \eta_i =  \beta_1 + f_2(x_{i2}) + \cdots + f_p(x_{ip})
+ 	\end{equation} 
+ 	Vector Generalized Additive Models (VGAMs) are not restricted to one linear predictor. Instead they have a separate one for every %   model parameter (e.g. two, one for the mean and one for the standard deviation in the case of a normal distribution).\\
+ 	
+ 
+ The constrained additive ordination (CAO) \citep{Yee2006} and the related canonical quadratic ordination (CQO) (originally canonic gaussian ordination) \citep{Yee2004} use reduced rank vector generalized additive models (RR-VGAMs) and linear models (RR-VGLM). 
+ 
+ %Was sind VGLMs 
+ VGLMs extend GLMs in two ways: 1. While a GLM only calculates the distribution of the mean conditional on some covariables, VGLMs can calculate that of multiple different parameters, e.g. the mean and the standard deviation. 2. The residual distribution around the parameter of choice is not restricted to belong to the exponential family of distributions.
+ The basic form of a VGLM is given in Eq. \ref{eq:VGLMbasic}.
+ \begin{equation}\label{eq:VGLMbasic} \tag{2.2.1}
+ \eta_j(\mathbf{x}) = g_j(\theta_j) = \sum_{k = 1}^m \beta_{(j)k}\ x_k\ \ \  j = 1\ ...\ M?  	
+ \end{equation}
+ % das j = 1...M muss noch im Text aufgenommen werden. Das beste wäre ein Abstaz, in dem Notation geklärt wird. 
+ Where $\eta_j$ is the $j^{th}$ linear predictor, $g_j$ is the parameter link function for the parameter $\theta_j$.      
+ 
+ VGLMs can be further generalized to VGAMs in which predictors are not constrained to be linear. The general form of a VGAM is shown in Eq. \ref{eq:VGAMbasic}
+ 
+ \begin{equation}\label{eq:VGAMbasic} \tag{2.2.2}	
+ \eta_j(\mathbf{x}) = \sum_{k = 1}^m f_{(j)k}\ (x_k)		
+ \end{equation}
+ 
+ The component functions $f_{(j)k}$ are functions, usually smooth, that are estimated from the data. 
+ % Fehlt hier noch was?
+ 
+ RR-VGAMs use Reduced-rank regression (termed by \citet{izenman1975reduced} and proposed by \citet{Anderson1951}) 
+ to reduce the number of predictor variables from $m$ to $R$ (usually one or two) latent variables $\nu$.
+ This is done as follows.
+ Design matrix $\mathbf{X}$ and hat matrix $\mathbf{B}$ are each partitioned into two subsets $\mathbf{X} = (\mathbf{x}_1^T,\mathbf{x}_2^T)^T$; $\mathbf{B} = (\mathbf{B}_1^T,\mathbf{B}_2^T)$. 
+ The first pair of subsets $\mathbf{x}_1$ and $\mathbf{B}_1$ are the explanatory variables and corresponding regression coefficients that do not contribute to the latent variables and remain unchanged. 
+ In practice $\mathbf{x}_1$ often only contains the intercept and $\mathbf{B}_1$ is thus a vector of 1s with length $m$. $\mathbf{B}_2$ is reduced to a rank $R$ matrix (with full column rank). 
+ It is approximated by two thin matrices $\mathbf{A}$ and $\mathbf{C}$ (see Eq. \ref{eq:ReduceB2}).
+ 
+ \begin{equation}\label{eq:ReduceB2}\tag{2.2.3}
+ \mathbf{B_2^T} = \mathbf{A}\ \mathbf{C}^T	
+ \end{equation}
+ 
+ The matrix $\mathbf{C}^T$ contains the constrained coefficients or weights. They are the constants in the linear combination of $x_2$ that constitutes the latent variables. (cf. Eq.\ref{eq:ctx2})
+ %which are the connection between the latent variables and the explanatory variables in $\mathbf{x}_2$ 
+ 
+ \begin{equation}\label{eq:ctx2}\tag{2.2.4}
+ \mathbf{\nu} = \mathbf{C}^T \mathbf{x}_2	
+ \end{equation}
+ 
+ The linear predictor therefore becomes:
+ 
+ \begin{equation}\label{eq:ctx3}\tag{2.2.5}
+ \eta = \mathbf{B}_1^T \mathbf{x}_1 + \mathbf{A} \mathbf{\nu}	
+ \end{equation}
+ 
+ Since the variables in $\mathbf{x}_1$ are not considered on the formation of the latent variables, RR-VGLMs technically perform partial ordinations. \\
+ CQO presents an adaption of RR-VGLMs to typical ecological datasets. It is assumed that the responses variables show symmetric and bell shaped responses to the underlying gradients presented by the latent variables. To this end, quadratic RR-VGLMs of the kind of equation \ref{eq:CQO1} are used.
+ 
+ \begin{equation}\label{eq:CQO1} \tag{2.2.6}
+ \eta_j = \beta_{(j)1} x_{(j)1} + \beta_{(j)2} \nu + \beta_{(j)3} \nu^2	
+ \end{equation} 
+ 
+ The response curve is unimodal for all $\beta_3 < 0$.
+ CQO does not assume the species packing model of the CCA.  Equal tolerances can make the interpretation of biplots easier, but the method is still valid for unequal tolerances. 
+ In a CAO the assumptions of symmetric bell shaped responses is relaxed by using a smooth function for $\nu$. This is done by using RR VGAMs instead of a quadratic RR-VGLM as in the CQO. 
+ The number of latent variables $R$ is also referred to as the rang. 
+ 
+ %%
+ 
+ %%----------%%%%
+  ---- CCA ---- %
+ %%----------%%%%
+ 
+ 	\noindent RGR is based on the Gaussian response model (\ref{eq:grm})
+ \begin{equation} \label{eq:grm}
+ Y_i = c \times exp\bigg(\frac{(x_i - u)^2}{2t^2}\bigg)
+ \end{equation}
+ 
+ \noindent The parameters $c$, $u$ and $t$ in the RGR can be estimated using Maximum Likelihood Estimation if equation \ref{eq:grm} is rewritten as: 
+ \begin{equation}\label{grm2}
+ Y_i = exp \bigg( b_1 + b_2x_i + b_3x_i^2 \bigg)
+ \end{equation}
+ with $t = 1/\sqrt{-2b_3}$, $ u = -b_2/2b_3$, and $c = exp(b_1-b_2^2/4b_3)$ and assuming that residuals are Poisson distributed. Instead of using all explanatory variables $\mathbf{X}$, RGR uses a linear combinations of them. 
+ \begin{equation}\label{RGR1}
+ z_i = \sum_{p=1}^M \alpha_p x_{ip}
+ \end{equation}     
+ where $\alpha$ is a known as canonical coefficient and gives the influence of each explanatory variable the respective linear combination. By replacing the explanatory variables in \ref{eq:grm} and \ref{grm2} by z they are adjusted to RGR. Maximum likelihood Estimation of $c$,$u$, $t$ and $\alpha$ is possible but computationally intensive and can be numerically unstable. 	
+ 
+ 
+ Since the variables in $\mathbf{x}_1$ are not considered on the formation of the latent variables, RR-VGLMs technically perform partial ordinations. \\
+ 
+ 	%	db-RDA was first proposed by \citet{Legendre1999}, to address the need for methods of multifactorial analysis of variance (MANOVA) that are not based on euclidean distance metrics. It is the constrained form of Principal Coordinates Analysis (PCoA), an eigenvalue based ordination conducted on association matrices, and is hence also known as Canonical Analysis of Principal Coordinates (CAP) as suggested by \citet{AndersonMati2003}. The distance metric can be freely chosen, and may be semi- or non-metric. The price for this flexibility is the loss of an explicit model of how species respond to gradients \citep{vsmilauer2014multivariate}. \\
+ %	% Beispiele für Nutztung -- oder auch nicht 
+ 
+ %%% --- CCA & CQO --- %%%
+ 
+ %	CCA and CQO are different approaches to restricted Gaussian regression (RGR), which is based on the Gaussian Response model (Eqn. ...) 
+ %	\begin{equation} \label{eq:GaussianResponseModel}
+ %	y_n = c \times exp\bigg(-\frac{(x_n - u)^2}{2t^2}\bigg)
+ %	\end{equation}
+ %	In this equation, $u$ is the position of the optimum (i.e. the point with the highest abundance) of along a gradient, $t$ the tolerance toward the gradient and determines the width of the curve and $c$ is the maximum abundance. 
+ %	In RGR, the original covariables $x$ are replaced by linear combinations of themselves, known as latent variables $\nu$, that represent environmental gradients (Eqn. \ref{eq:RGR_xtonu}).  
+ %	\begin{equation}\label{eq:RGR_xtonu}
+ %		\nu_n = \sum_{m=1}^M \alpha_m\ x_{nm}
+ %	\end{equation}
+ %	$\alpha$ are the \textit{canonical coefficients}, determining the weight of covariable m on $\nu$.
+ %	Equation \ref{eq:GaussianResponseModel} is adjusted by replacing $x_n$ with $\nu_n$. \\
+ %	Maximum likelihood estimation can estimate parameter values for RGR but \citet{TerBraak1986} proposed a heuristic approach instead. Assuming equal tolerances and maximal abundances, uniform distribution of species optima and site scores over the latent variable space and bell-shaped responses, assumptions that are collectively known as the species packing model, CCA approximates the maximum likelihood solution of RGR. \citet{Palmer1993}, \citet{Johnson1999} and \citet{Zuur1999} (as cited in \citep{Zuur2007}) confirmed the approximation by simulation studies. They also showed that it was reasonably robust to violations of the species packing model. Nonetheless, the restrictive assumptions were widely criticized (e.g. \citep{Austin1994}) 
+ %	\citet{TerBraak1986} cited the heavy computational load as his main reason for avoiding maximum likelihood estimation. Today, CCA might be the most widely used constrained ordination technique in ecology \citep{ Kenkel2006, Zhang2012}.\\

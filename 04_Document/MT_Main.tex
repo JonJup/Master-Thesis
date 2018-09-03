@@ -1,0 +1,180 @@
+% !TeX spellcheck = en_US
+
+%------------------------------%
+%&			To Do
+%------------------------------%
+
+
+%------------------------------%
+%&			Preambel
+%------------------------------%
+
+
+\documentclass[a4paper,12pt]{article}
+\input{settings/page}
+
+%------------------------------------
+
+\begin{document}
+
+		\pagenumbering{roman}
+		
+%------------------------------%
+%&			TITLE PAGE
+%------------------------------%
+		
+		\begin{titlepage}
+			
+			\begin{center}
+				
+				\vspace*{3cm}
+							
+				%------------------------------%
+				%&			TITLE
+				%------------------------------%
+				
+				\begingroup
+					% Topline 
+					\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} 							
+					\rule{\textwidth}{0.4pt} 	
+					%whitespace above title															
+					\vspace{.1em} \\	
+					%Title														
+					\textbf{\LARGE Model-based multivariate approaches in community ecology}\\	
+					% Whitespace below the title
+					\vspace{0.25\baselineskip} 
+					%Bottomline
+					\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} 
+					\rule{\textwidth}{1.6pt} 
+				\endgroup
+				
+				%------------------------------%
+				%&			AUTHOR
+				%------------------------------%
+				
+				% Distance to Title 
+				\vspace{2.5em}
+				
+				\begingroup
+					by\\
+					\Large
+					 Jonathan Frederik Jupke \\[.5em]
+					\normalsize
+					Martin-Luther-Stra{\ss}e 41\\
+					76829 Landau \\
+					 Student ID: 212202111 \\
+					jupk7193@uni-landau.de \\
+				\endgroup
+				
+				%------------------------------%
+				%&		Supervisors
+				%------------------------------%
+				
+				% Distance to Authors 
+				\vspace{2.5em}
+				
+				\begingroup
+					SUPERVISION\\
+					\Large
+					 Prof. Dr. Ralf Sch{\"a}fer\\
+					 Dr. Mira Kattwinkel\\
+				\endgroup
+				
+				\vfill
+
+				%------------------------------%
+				%&		Institut
+				%------------------------------%
+			
+				\begingroup
+					\small
+					Master Thesis for the study program MSc. Environmental Sciences\\
+					Fachbereich 7: Natur- und Umweltwissenschaften \\
+					Universit{\"a}t Koblenz-Landau
+				\endgroup
+				
+				\vfill
+				
+				7\textsuperscript{th} September 2018
+				
+				
+			\end{center}     	
+		\end{titlepage}
+		
+		\newpage
+%-------------------------------
+			
+%------------------------------%
+%&	DECLARATION OF AUTHORSHIP
+%------------------------------%
+		
+		%Header
+		\huge
+		\textbf{Declaration of Authorship}\bigskip\\
+		
+		%Text
+		\normalsize
+		\noindent „Hiermit best{\"a}tige ich, dass die vorliegende Arbeit von mir selbst{\"a}ndig verfasst wurde und ich keine 
+		anderen als die angegebenen Hilfsmittel -- insbesondere keine im Quellenverzeichnis nicht benannten Internet - Quellen --
+		benutzt habe und die Arbeit von mir vorher nicht in einem anderen Pr{\"u}fungsverfahren eingereicht wurde.“\bigskip\bigskip\\
+		
+		%Subscriptionline
+		\noindent\begin{tabular}{ll}
+			\makebox[2.5in]{\hrulefill} & \makebox[2.5in]{\hrulefill}\\
+			Jonathan F. Jupke & Date, Location\\[8ex]% adds space between the two sets of signatures
+			
+		\end{tabular}	
+
+		\newpage	
+%-------------------------------
+		
+%------------------------------%
+%&		Acknowledgements
+%------------------------------%
+	
+		% Header
+		\huge
+		\textbf{Acknowledgements}\bigskip\\
+		
+		% Text
+		\normalsize
+		I would like to thank Prof. Sch{\"a}fer for proposing this thesis topic, helping me through the inevitable road bumps and pushing the simulation process into a productive direction. 
+		%
+		Further, I owe many thanks to Isabel M{\"u}ller, Sebastian Scheu, Artem Fischbein and Alisa Bamberg for proofreading the thesis.
+		%
+		Their suggestions have provided valuable input. 
+		%
+		Lastly, I would like to thank Guillaume Blanchet and Matri Anderson, who even though not directly involved in this work, patiently answered my emails. 
+		
+		
+		\newpage	
+%%-------------------------------
+
+		\tableofcontents
+		\thispagestyle{empty}
+
+		\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagenumbering{arabic}
+	\input{Parts/01_Introduction}
+	\newpage 
+%%%%%%%%%%%%%%%%%%%%%%	
+	\input{Parts/02_Methods}	
+	\input{Parts/03_Results}	
+	\input{Parts/04_Discussion}	
+
+	\newpage
+		
+	\small
+	\addcontentsline{toc}{section}{References}	
+	
+	\bibliographystyle{apalike}
+
+	\bibliography{Bib/Master_Bib}
+	%\bibpunct{()}{)}{;}{a}{}{;}
+	\newpage
+	\include{Parts/05_Anhang}
+
+
+	
+\end{document}	

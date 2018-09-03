@@ -1,0 +1,570 @@
+\begin{thebibliography}{}
+
+\bibitem[Akaike, 1974]{akaike1974new}
+Akaike, H. (1974).
+\newblock A new look at the statistical model identification.
+\newblock {\em IEEE transactions on automatic control}, 19(6):716--723.
+
+\bibitem[Anderson, 2001]{anderson2001new}
+Anderson, M.~J. (2001).
+\newblock A new method for non-parametric multivariate analysis of variance.
+\newblock {\em {Australian Ecology}}, 26(1):32--46.
+
+\bibitem[Anderson and Willis, 2003]{AndersonMati2003}
+Anderson, M.~J. and Willis, T.~J. (2003).
+\newblock {Canonical Analysis of Principal Coordinates: A Useful Method of
+  Constrained Ordination for Ecology}.
+\newblock {\em Ecology}, 84(2):511--525.
+
+\bibitem[Anderson, 1951]{Anderson1951}
+Anderson, T.~W. (1951).
+\newblock Estimating linear restrictions on regression coefficients for
+  multivariate normal distributions.
+\newblock {\em Annals of Mathematical Statistics}, 22(3):327–--351.
+
+\bibitem[Armsworth et~al., 2009]{armsworth2009contrasting}
+Armsworth, P.~R., Gaston, K.~J., Hanley, N., and Ruffell, R. (2009).
+\newblock Contrasting approaches to statistical regression in ecology and
+  economics.
+\newblock {\em Journal of Applied Ecology}, 46(2):265--268.
+
+\bibitem[Austin et~al., 1994]{austin1994determining}
+Austin, M., Nicholls, A., Doherty, M., and Meyers, J. (1994).
+\newblock Determining species response functions to an environmental gradient
+  by means of a $\beta$-function.
+\newblock {\em Journal of Vegetation Science}, 5(2):215--228.
+
+\bibitem[Austin, 1999]{Austin1999}
+Austin, M.~P. (1999).
+\newblock {A Silent Clash of Paradigms: Some Inconsistencies in Community
+  Ecology}.
+\newblock {\em Oikos}, 86(1):170 -- 178.
+
+\bibitem[Austin and Gaywood, 1994]{Austin1994}
+Austin, M.~P. and Gaywood, M.~J. (1994).
+\newblock {Current problems of environmental gradients and species response
+  curves in relation to continuum theory}.
+\newblock {\em Journal of Vegetation Science}, 5(4):473--482.
+
+\bibitem[Baselga and Ara{\'{u}}jo, 2009]{Baselga2009}
+Baselga, A. and Ara{\'{u}}jo, M.~B. (2009).
+\newblock {Individualistic vs community modelling of species distributions
+  under climate change}.
+\newblock {\em Ecography}, 32(1):55--65.
+
+\bibitem[Blanchet et~al., 2014]{Blanchet2014}
+Blanchet, F.~G., Legendre, P., Bergeron, J. A. C.~B., and He, F. (2014).
+\newblock {Consensus RDA across dissimilarity coefficients for canonical
+  ordination of community composition data}.
+\newblock {\em Ecological Monographs}, 84(3):491--511.
+
+\bibitem[Bloom, 1981]{bloom1981similarity}
+Bloom, S.~A. (1981).
+\newblock Similarity indices in community studies: potential pitfalls.
+\newblock {\em Marine Ecological Progress Series}, 5(2):125--128.
+
+\bibitem[Carosi et~al., 2017]{Carosi2017}
+Carosi, A., Ghetti, L., {La Porta}, G., and Lorenzoni, M. (2017).
+\newblock {Ecological effects of the European barbel Barbus barbus (L., 1758)
+  (Cyprinidae) invasion on native barbel populations in the Tiber River basin
+  (Italy)}.
+\newblock {\em European Zoological Journal}, 84(1):420--435.
+
+\bibitem[Clark et~al., 2014]{Clark2014}
+Clark, J.~S., Gelfand, A.~E., Woodall, C.~W., and Zhu, K. (2014).
+\newblock {More than the sum of the parts: Forest climate response from joint
+  species distribution models}.
+\newblock {\em Ecological Applications}, 24(5):990--999.
+
+\bibitem[Clark et~al., 2017]{Clark2017}
+Clark, J.~S., Nemergut, D., Seyednasrollah, B., Turner, P.~J., and Zhang, S.
+  (2017).
+\newblock {Generalized joint attribute modeling for biodiversity analysis:
+  Median-zero, multivariate, multifarious data}.
+\newblock {\em Ecological Monographs}, 87(1):34--56.
+
+\bibitem[Clarke, 1993]{clarke1993non}
+Clarke, K.~R. (1993).
+\newblock Non-parametric multivariate analyses of changes in community
+  structure.
+\newblock {\em Australian Journal of Ecology}, 18(1):117--143.
+
+\bibitem[Clements, 1907]{Clements1907}
+Clements, F.~E. (1907).
+\newblock {\em Plant Physiology and Ecology}.
+\newblock New York, NY: Henry Holt and Company.
+
+\bibitem[Cristescu, 2014]{cristescu2014barcoding}
+Cristescu, M.~E. (2014).
+\newblock From barcoding single individuals to metabarcoding biological
+  communities: towards an integrative approach to the study of global
+  biodiversity.
+\newblock {\em Trends in Ecology \& Evolution}, 29(10):566--571.
+
+\bibitem[Dormann et~al., 2018]{dormann2018biotic}
+Dormann, C., Bobrowski, M., Dehling, M., Harris, D., Hartig, F., Lischke, H.,
+  Moretti, M., Pagel, J., Pinkert, S., Schleuning, M., et~al. (2018).
+\newblock Biotic interactions in species distribution modelling: Ten questions
+  to guide interpretation and avoid false conclusions.
+\newblock {\em Global Ecological Biogeography}, 00:1--–13.
+
+\bibitem[Eliot, 2011]{Eliot2011}
+Eliot, C. (2011).
+\newblock The legend of order and chaos: communities and early community
+  ecology.
+\newblock {\em In: Brown, B., de Laplante, K. and Peacock, K.: Philosophy of
+  Ecology. Elsevier, Netherlands.}, pages 49--107.
+
+\bibitem[Faith et~al., 1987]{faith1987compositional}
+Faith, D.~P., Minchin, P.~R., and Belbin, L. (1987).
+\newblock Compositional dissimilarity as a robust measure of ecological
+  distance.
+\newblock {\em Vegetatio}, 69(1-3):57--68.
+
+\bibitem[Fidler et~al., 2006]{FIDLER2006}
+Fidler, F., Burgman, M.~A., Cumming, G., Buttrose, R., and Thomason, N. (2006).
+\newblock {Impact of Criticism of Null-Hypothesis Significance Testing on
+  Statistical Reporting Practices in Conservation Biology}.
+\newblock {\em Conservation Biology}, 20:1539--1544.
+
+\bibitem[Fox et~al., 2015]{fox2015ecological}
+Fox, G.~A., Negrete-Yankelevich, S., and Sosa, V.~J. (2015).
+\newblock {\em Ecological statistics: contemporary theory and application}.
+\newblock Oxford University Press, USA.
+
+\bibitem[Frost and Thompson, 2000]{frost2000correcting}
+Frost, C. and Thompson, S.~G. (2000).
+\newblock Correcting for regression dilution bias: comparison of methods for a
+  single predictor variable.
+\newblock {\em Journal of the Royal Statistical Society: Series A (Statistics
+  in Society)}, 163(2):173--189.
+
+\bibitem[{Gauch} et~al., 1974]{gauch1974ordination}
+{Gauch}, H. G.~J., Chase, G.~B., and Whittaker, R.~H. (1974).
+\newblock Ordination of vegetation samples by gaussian species distributions.
+\newblock {\em Ecology}, 55(6):1382--1390.
+
+\bibitem[{Gauch} and Whittaker, 1972a]{GauchJr1972}
+{Gauch}, H. G.~J. and Whittaker, R.~H. (1972a).
+\newblock {Coenocline Simulation}.
+\newblock {\em Ecology}, 53(3):446--451.
+
+\bibitem[{Gauch} and Whittaker, 1972b]{GauchJr.1972}
+{Gauch}, H. G.~J. and Whittaker, R.~H. (1972b).
+\newblock {Comparison of ordination techniques}.
+\newblock {\em Ecology}, 53(5):868--875.
+
+\bibitem[{Gauch} et~al., 1977]{GauchJr1977}
+{Gauch}, H. G.~J., Whittaker, R.~H., and Wentworth, T.~R. (1977).
+\newblock {A comparative study of reciprocal averaging and other ordintion
+  techniques}.
+\newblock {\em Journal of Ecology}, 65(1):157--174.
+
+\bibitem[Gower, 1966]{gower1966some}
+Gower, J.~C. (1966).
+\newblock Some distance properties of latent root and vector methods used in
+  multivariate analysis.
+\newblock {\em Biometrika}, 53(3-4):325--338.
+
+\bibitem[Gower and Legendre, 1986]{gower1986metric}
+Gower, J.~C. and Legendre, P. (1986).
+\newblock Metric and euclidean properties of dissimilarity coefficients.
+\newblock {\em Journal of classification}, 3(1):5--48.
+
+\bibitem[Greig-Smith, 1983]{greig1983quantitative}
+Greig-Smith, P. (1983).
+\newblock {\em Quantitative Plant Ecology}, volume~9.
+\newblock University of California Press, USA.
+
+\bibitem[Hampton et~al., 2013]{Hampton2013}
+Hampton, S.~E., Strasser, C.~A., Tewksbury, J.~J., Gram, W.~K., Budden, A.~E.,
+  Batcheller, A.~L., Duke, C.~S., and Porter, J.~H. (2013).
+\newblock {Big data and the future of ecology}.
+\newblock {\em Frontiers in Ecology and the Environment}, 11(3):156--162.
+
+\bibitem[Hastie et~al., 2008]{Hastie2008}
+Hastie, T., Tibshirani, R., and Friedman, .~J. (2008).
+\newblock {\em The Elements of Statistical Learning}.
+\newblock Springer, New York., 2nd edition.
+
+\bibitem[Izenman, 1975]{izenman1975reduced}
+Izenman, A.~J. (1975).
+\newblock Reduced-rank regression for the multivariate linear model.
+\newblock {\em Journal of Multivariate Analysis}, 5(2):248--264.
+
+\bibitem[Jamil et~al., 2014]{jamil2014unimodal}
+Jamil, T., Kruk, C., and ter Braak, C.~J. (2014).
+\newblock A unimodal species response model relating traits to environment with
+  application to phytoplankton communities.
+\newblock {\em PloS one}, 9(5):e97583.
+
+\bibitem[Jamil et~al., 2012]{Jamil2012}
+Jamil, T., Ozinga, W.~A., Kleyer, M., and ter Braak, C. J.~F. (2012).
+\newblock {Selecting traits that explain species ‐ environment relationships
+  : a Generalized Linear Mixed Model approach}.
+\newblock {\em Journal of Vegetation Science}, 24:1--43.
+
+\bibitem[Jamil and ter Braak, 2013]{Jamil2013}
+Jamil, T. and ter Braak, C.~J. (2013).
+\newblock {Generalized linear mixed models can detect unimodal
+  species-environment relationships}.
+\newblock {\em PeerJ}, 1:e95.
+
+\bibitem[Johnson and Altman, 1999]{Johnson1999}
+Johnson, K.~W. and Altman, N.~S. (1999).
+\newblock {Canonical Correspondence Analysis as an approximation to Gaussian
+  ordination}.
+\newblock {\em Environmetrics}, 10(1):39--52.
+
+\bibitem[Kenkel and Orloci, 1986]{Kenkel1986}
+Kenkel, N.~C. and Orloci, L. (1986).
+\newblock {Applying Metric and Nonmetric Multidimensional Scaling to Ecological
+  Studies : Some New Results}.
+\newblock {\em Ecology}, 67(4):919--928.
+
+\bibitem[Legendre and Anderson, 1999]{Legendre1999}
+Legendre, P. and Anderson, M.~J. (1999).
+\newblock {Distance-Based Redundancy Analysis: Testing Multispecies Responses
+  in Multifactorial Ecological Experiments}.
+\newblock {\em Ecological Monographs}, 69(1):1--24.
+
+\bibitem[Legendre and Gallagher, 2001]{Legendre2001}
+Legendre, P. and Gallagher, E.~D. (2001).
+\newblock {Ecologically meaningful transformations for ordination of species
+  data}.
+\newblock {\em Oecologia}, 129(2):271--280.
+
+\bibitem[Legendre et~al., 1997]{legendre1997relating}
+Legendre, P., Galzin, R., and Harmelin-Vivien, M.~L. (1997).
+\newblock Relating behavior to habitat: Solutions to the fourth-corner problem.
+\newblock {\em Ecology}, 78(2):547--562.
+
+\bibitem[Legendre and Legendre, 2012]{Legendre2012}
+Legendre, P. and Legendre, L. F.~J. (2012).
+\newblock {\em Numerical Ecology}, volume~24 of {\em Developments in
+  Environmental Modelling}.
+\newblock Elsevier, 3 edition.
+
+\bibitem[Legendre et~al., 2011]{Legendre2011}
+Legendre, P., Oksanen, J., and ter Braak, C. J.~F. (2011).
+\newblock {Testing the significance of canonical axes in redundancy analysis}.
+\newblock {\em Methods in Ecology and Evolution}, 2(3):269--277.
+
+\bibitem[Maguire et~al., 2016]{Maguire2016}
+Maguire, K.~C., Nieto-Lugilde, D., Blois, J.~L., Fitzpatrick, M.~C., Williams,
+  J.~W., Ferrier, S., and Lorenz, D.~J. (2016).
+\newblock {Controlled comparison of species- and community-level models across
+  novel climates and communities}.
+\newblock {\em Proceedings of the Royal Philosophical Society - B},
+  283:20152817.
+
+\bibitem[Makarenkov and Legendre, 2002]{Makarenkov2002}
+Makarenkov, V. and Legendre, P. (2002).
+\newblock {Nonlinear redundancy analysis and canonical correspondence analysis
+  based on polynomial regression}.
+\newblock {\em Ecology}, 83(4):1146--1161.
+
+\bibitem[McCune, 1997]{McCune1997}
+McCune, B. (1997).
+\newblock {Influence of noisy environmental data on canonical correspondence
+  analysis}.
+\newblock {\em Ecology}, 78(8):2617--2623.
+
+\bibitem[McInerny and Purves, 2011]{McInerny2011}
+McInerny, G.~J. and Purves, D.~W. (2011).
+\newblock {Fine-scale environmental variation in species distribution
+  modelling: regression dilution, latent variables and neighbourly advice}.
+\newblock {\em Methods in Ecology and Evolution}, 2:248--257.
+
+\bibitem[Meier et~al., 2010]{Meier2010}
+Meier, E.~S., Kienast, F., Pearman, P.~B., Svenning, J.~C., Thuiller, W.,
+  Ara{\'{u}}jo, M.~B., Guisan, A., and Zimmermann, N.~E. (2010).
+\newblock {Biotic and abiotic variables show little redundancy in explaining
+  tree species distributions}.
+\newblock {\em Ecography}, 33(6):1038--1048.
+
+\bibitem[Morales-Castilla et~al., 2015]{morales2015inferring}
+Morales-Castilla, I., Matias, M.~G., Gravel, D., and Ara{\'u}jo, M.~B. (2015).
+\newblock Inferring biotic interactions from proxies.
+\newblock {\em Trends in Ecology \& Evolution}, 30(6):347--356.
+
+\bibitem[Niku et~al., 2017]{Niku2017}
+Niku, J., Warton, D.~I., Hui, F.~K., and Taskinen, S. (2017).
+\newblock {Generalized Linear Latent Variable Models for Multivariate Count and
+  Biomass Data in Ecology}.
+\newblock {\em Journal of Agricultural, Biological, and Environmental
+  Statistics}, 22(4):1--25.
+
+\bibitem[Odum, 1950]{odum1950bird}
+Odum, E.~P. (1950).
+\newblock Bird populations of the highlands (north carolina) plateau in
+  relation to plant succession and avian invasion.
+\newblock {\em Ecology}, 31(4):587--605.
+
+\bibitem[O'Hara and Kotze, 2010]{OHara2010}
+O'Hara, R.~B. and Kotze, D.~J. (2010).
+\newblock {Do not log-transform count data}.
+\newblock {\em Methods in Ecology and Evolution}, 1(2):118--122.
+
+\bibitem[Oksanen et~al., 2018]{Oksanen2018}
+Oksanen, J., Blanchet, F.~G., Friendly, M., Kindt, R., Legendre, P., McGlinn,
+  D., Minchin, P.~R., O'Hara, R.~B., Simpson, G.~L., Solymos, P., Stevens, M.
+  H.~H., Szoecs, E., and Wagner, H. (2018).
+\newblock {\em vegan: Community Ecology Package}.
+\newblock R package version 2.4-6.
+
+\bibitem[Oksanen and Minchin, 2002]{Oksanen2002}
+Oksanen, J. and Minchin, P.~R. (2002).
+\newblock {Continuum theory revisited: What shape are species responses along
+  ecological gradients?}
+\newblock {\em Ecological Modelling}, 157(2-3):119--129.
+
+\bibitem[Ovaskainen et~al., 2017]{Ovaskainen2017}
+Ovaskainen, O., Tikhonov, G., Norberg, A., {Guillaume Blanchet}, F., Duan, L.,
+  Dunson, D., Roslin, T., and Abrego, N. (2017).
+\newblock {How to make more out of community data? A conceptual framework and
+  its implementation as models and software}.
+\newblock {\em Ecology Letters}, 20(5):561--576.
+
+\bibitem[Pacifici et~al., 2015]{pacifici2015assessing}
+Pacifici, M., Foden, W.~B., Visconti, P., Watson, J.~E., Butchart, S.~H.,
+  Kovacs, K.~M., Scheffers, B.~R., Hole, D.~G., Martin, T.~G., Akcakaya, H.~R.,
+  et~al. (2015).
+\newblock Assessing species vulnerability to climate change.
+\newblock {\em Nature Climate Change}, 5(3):215.
+
+\bibitem[Palmer, 1993]{Palmer1993}
+Palmer, M.~W. (1993).
+\newblock {Putting Things in Even Better Order: The Advantages of Canonical
+  Correspondence Analysis}.
+\newblock {\em Ecology}, 74(8):2215--2230.
+
+\bibitem[Pollock et~al., 2014]{Pollock2014}
+Pollock, L.~J., Tingley, R., Morris, W.~K., Golding, N., O'Hara, R.~B., Parris,
+  K.~M., Vesk, P.~A., and Mccarthy, M.~A. (2014).
+\newblock {Understanding co-occurrence by modelling species simultaneously with
+  a Joint Species Distribution Model (JSDM)}.
+\newblock {\em Methods in Ecology and Evolution}, 5(5):397--406.
+
+\bibitem[{R Core Team}, 2018]{RCT2018}
+{R Core Team} (2018).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Roberts, 2008]{Roberts2008}
+Roberts, D.~W. (2008).
+\newblock {Statistical Analysis of Multidimensional Fuzzy Set Ordinations}.
+\newblock {\em Ecology}, 89(5):1246--1260.
+
+\bibitem[Roberts, 2009]{Roberts2009}
+Roberts, D.~W. (2009).
+\newblock {Comparison of multidimensional fuzzy set ordination with CCA and
+  DB-RDA}.
+\newblock {\em Ecology}, 90(9):2622--2634.
+
+\bibitem[Routledge and Swartz, 1991]{routledge1991taylor}
+Routledge, R.~D. and Swartz, T.~B. (1991).
+\newblock Taylor's power law re-examined.
+\newblock {\em Oikos}, 60(1):107--112.
+
+\bibitem[Royle, 2004]{royle2004n}
+Royle, J.~A. (2004).
+\newblock N-mixture models for estimating population size from spatially
+  replicated counts.
+\newblock {\em Biometrics}, 60(1):108--115.
+
+\bibitem[Rozeboom, 1960]{rozeboom1960fallacy}
+Rozeboom, W.~W. (1960).
+\newblock The fallacy of the null-hypothesis significance test.
+\newblock {\em Psychological Bulletin}, 57(5):416.
+
+\bibitem[Schnabel et~al., 2012]{schnabel2012modeling}
+Schnabel, S.~K., van Eeuwijk, F.~A., and Eilers, P.~H. (2012).
+\newblock Modeling latent curves for genotype by environment interaction.
+\newblock In {\em Proceedings of the 27th International Workshop on Statistical
+  Modellin Prague}, pages 309--313.
+
+\bibitem[Sz{\"{o}}cs and Sch{\"{a}}fer, 2015]{Szocs2015_b}
+Sz{\"{o}}cs, E. and Sch{\"{a}}fer, R.~B. (2015).
+\newblock {Ecotoxicology is not normal}.
+\newblock {\em Environmental Science and Pollution Research},
+  22(18):13990–13999.
+
+\bibitem[Sz{\"{o}}cs et~al., 2015]{Szocs2015}
+Sz{\"{o}}cs, E., {Van den Brink}, P.~J., Lagadic, L., Caquet, T., Roucaute, M.,
+  Auber, A., Bayona, Y., Liess, M., Ebke, P., Ippolito, A., ter Braak, C.~J.,
+  Brock, T.~C., and Sch{\"{a}}fer, R.~B. (2015).
+\newblock {Analysing chemical-induced changes in macroinvertebrate communities
+  in aquatic mesocosm experiments: a comparison of methods}.
+\newblock {\em Ecotoxicology}, 24(4):760--769.
+
+\bibitem[ter Braak, 2014]{Braak2014}
+ter Braak, C.~J. (2014).
+\newblock History of canonical correspondence analysis.
+\newblock {\em In Blasius J. and Greenacre M. Visualization and Verbalization
+  of Data. CRC Press, Boca Raton, USA}, pages 61--75.
+
+\bibitem[ter Braak and {\v{S}}milauer, 2015]{TerBraak2015}
+ter Braak, C.~J. and {\v{S}}milauer, P. (2015).
+\newblock {Topics in constrained and unconstrained ordination}.
+\newblock {\em Plant Ecology}, 216(5):683--696.
+
+\bibitem[ter Braak, 1986]{TerBraak1986}
+ter Braak, C. J.~F. (1986).
+\newblock {Canonical Correspondence Analysis: A New Eigenvector Technique for
+  Multivariate Direct Gradient Analysis}.
+\newblock {\em Ecology}, 67(5):1167--1179.
+
+\bibitem[ter Braak and Prentice, 1988]{TerBraak1988}
+ter Braak, C. J.~F. and Prentice, I.~C. (1988).
+\newblock {A Theory of Gradient Analysis}.
+\newblock {\em Advances in Ecological Research}, 18:271--317.
+
+\bibitem[Top et~al., 2016]{Top2016}
+Top, N., Tarkan, A.~S., Vilizzi, L., and Karakuş, U. (2016).
+\newblock {Microhabitat interactions of non-native pumpkinseed Lepomis gibbosus
+  in a Mediterranean-type stream suggest no evidence for impact on endemic
+  fishes}.
+\newblock {\em Knowledge {\&} Management of Aquatic Ecosystems},
+  417(36):01--07.
+
+\bibitem[Venables and Ripley, 2002]{Venables2002}
+Venables, W.~N. and Ripley, B.~D. (2002).
+\newblock {\em Modern Applied Statistics with S}.
+\newblock Springer, New York, 4. edition.
+\newblock ISBN 0-387-95457-0.
+
+\bibitem[Verhulst, 1838]{verhulst1838notice}
+Verhulst, P.-F. (1838).
+\newblock Notice sur la loi que la population suit dans son accroissement.
+  correspondance math{\'e}matique et physique publi{\'e}e par a.
+\newblock {\em Quetelet}, 10:113--121.
+
+\bibitem[Vilizzi et~al., 2012]{Vilizzi2012}
+Vilizzi, L., Stakenas, S., and Copp, G.~H. (2012).
+\newblock {Use of constrained additive and quadratic ordination in fish habitat
+  studies: an application to introduced pumpkinseed Lepomis gibbosus and native
+  brown trout Salmo truttain an English stream}.
+\newblock {\em Fundamental and Applied Limnology}, 180(1):69--75.
+
+\bibitem[Wang et~al., 2018]{Wang2018}
+Wang, Y., Naumann, U., Eddelbuettel, D., and Warton, D. (2018).
+\newblock {\em mvabund: Statistical Methods for Analysing Multivariate
+  Abundance Data}.
+\newblock R package version 3.13.1.
+
+\bibitem[Wang et~al., 2012]{Wang2012}
+Wang, Y.~A., Naumann, U., Wright, S.~T., and Warton, D.~I. (2012).
+\newblock {Mvabund- an R package for model-based analysis of multivariate
+  abundance data}.
+\newblock {\em Methods in Ecology and Evolution}, 3(3):471--474.
+
+\bibitem[Warton, 2008a]{warton2008penalized}
+Warton, D.~I. (2008a).
+\newblock Penalized normal likelihood and ridge regularization of correlation
+  and covariance matrices.
+\newblock {\em Journal of the American Statistical Association},
+  103(481):340--349.
+
+\bibitem[Warton, 2008b]{Warton2008}
+Warton, D.~I. (2008b).
+\newblock {Raw data graphing: An informative but under-utilized tool for the
+  analysis of multivariate abundances}.
+\newblock {\em Australian Ecology}, 33(3):290--300.
+
+\bibitem[Warton, 2011]{Warton2011a}
+Warton, D.~I. (2011).
+\newblock {Regularized Sandwich Estimators for Analysis of High-Dimensional
+  Data Using Generalized Estimating Equations}.
+\newblock {\em Biometrics}, 67(1):116--123.
+
+\bibitem[Warton et~al., 2015a]{Warton2015}
+Warton, D.~I., Blanchet, F.~G., Hara, R. B.~O., Ovaskainen, O., Taskinen, S.,
+  Walker, S.~C., and Hui, F.~K. (2015a).
+\newblock {So Many Variables: Joint Modeling in Community Ecology}.
+\newblock {\em Trends in Ecology {\&} Evolution}, 30(12):766--779.
+
+\bibitem[Warton et~al., 2015b]{Warton2015a}
+Warton, D.~I., Foster, S.~D., De'ath, G., Stoklosa, J., and Dunstan, P.~K.
+  (2015b).
+\newblock {Model-based thinking for community ecology}.
+\newblock {\em Plant Ecology}, 216(5):669--682.
+
+\bibitem[Warton and Hui, 2011]{Warton2011}
+Warton, D.~I. and Hui, F.~K. (2011).
+\newblock {The arcsine is asinine: the analysis of proportions in ecology}.
+\newblock {\em Ecology}, 92(1):3--10.
+
+\bibitem[Warton and Popovic, 2018]{Warton2018}
+Warton, D.~I. and Popovic, G. (2018).
+\newblock Model-based multivariate analysis.
+\newblock Presentation.
+
+\bibitem[Warton et~al., 2017]{Warton2017}
+Warton, D.~I., Thibaut, L., and Wang, Y.~A. (2017).
+\newblock {The PIT-trap - A “model-free” bootstrap procedure for inference
+  about regression models with discrete, multivariate responses}.
+\newblock {\em PLoS ONE}, 12(7):e0181790.
+
+\bibitem[Warton et~al., 2012]{Warton2012}
+Warton, D.~I., Wright, S.~T., and Wang, Y. (2012).
+\newblock {Distance-based multivariate analyses confound location and
+  dispersion effects}.
+\newblock {\em Methods in Ecology and Evolution}, 3(1):89--101.
+
+\bibitem[Westfall and Young, 1993]{Westfall1993}
+Westfall, P. and Young, S. (1993).
+\newblock {\em Resampling-Based Multiple Testing}.
+\newblock John Wiley \& Sons, New York.
+
+\bibitem[Yamamura, 1999]{yamamura1999transformation}
+Yamamura, K. (1999).
+\newblock Transformation using (x+ 0.5) to stabilize the variance of
+  populations.
+\newblock {\em Researches on Population Ecology}, 41(3):229--234.
+
+\bibitem[Yee, 2004]{Yee2004}
+Yee, T.~W. (2004).
+\newblock {A New Technique for Maximum-Likelihood Canonical Gaussian
+  Ordination}.
+\newblock {\em Ecological Monographs}, 74(4):685--701.
+
+\bibitem[Yee, 2006]{Yee2006}
+Yee, T.~W. (2006).
+\newblock {Constrained additive ordination}.
+\newblock {\em Ecology}, 87(1):203--213.
+
+\bibitem[Yee, 2015]{yee2015vector}
+Yee, T.~W. (2015).
+\newblock {\em {Vector generalized linear and additive models: with an
+  implementation in R}}.
+\newblock Springer, New York.
+
+\bibitem[Yee, 2018]{Yee2018}
+Yee, T.~W. (2018).
+\newblock {\em {VGAM}: Vector Generalized Linear and Additive Models}.
+\newblock R package version 1.0-5.
+
+\bibitem[Yee and Hastie, 2003]{yee2003reduced}
+Yee, T.~W. and Hastie, T.~J. (2003).
+\newblock Reduced-rank vector generalized linear models.
+\newblock {\em Statistical modelling}, 3(1):15--41.
+
+\bibitem[Yee and Wild, 1996]{yee1996vector}
+Yee, T.~W. and Wild, C. (1996).
+\newblock Vector generalized additive models.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, pages 481--493.
+
+\bibitem[Zhang and Thas, 2012]{Zhang2012}
+Zhang, Y. and Thas, O. (2012).
+\newblock {Constrained ordination analysis in the presence of zero inflation}.
+\newblock {\em Statistical Modelling}, 12(6):463--485.
+
+\bibitem[Zuur, 1999]{Zuur1999}
+Zuur, A.~F. (1999).
+\newblock {\em Dimension reduction techniques in community ecology with
+  applications to spatio-temporal marine ecological data}.
+\newblock PhD thesis, University of Aberdeen.
+
+\end{thebibliography}

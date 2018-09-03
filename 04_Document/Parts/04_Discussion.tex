@@ -1,0 +1,329 @@
+% !TeX spellcheck = en_US
+
+\section{Discussion}
+
+
+%------------------------------%
+%& 		Repeat what I did		
+%------------------------------%
+	I ran four different statistical methods (GLM$_{mv}$, db-RDA, CCA, CAO/CQO) on a total of 120 simulated abundance datasets, that differed in response types, sample sizes, number of noise variables and random number generation seeds, to assess their ability to differentiate between environmental variables and noise variables. \\
+
+%------------------------------%
+%& 	Ein Satz Fazit für Alle		
+%------------------------------%
+
+	The GLM$_{mv}$ correctly assigned low multivariate \textit{p}-values to all environmental variables, and higher ones to noise variables.
+	%
+	Univariate significance tests also performed well, except for uni- or bimodal gradients receiving high \textit{p}-values for species with optima close to their centers.   
+	%
+	For class four models GLM$_{mv}$s did not converge.
+	%
+	db-RDA also differentiated well between environmental and noise variables for all response type combinations.
+	%
+	However, low sample sizes increased \textit{p}-values for environmental variables and decreased those of noise variables.
+	%
+	In CCA, linear gradients got high \textit{p}-values if combined with other response types and noise variables had the lowest \textit{p}-values out of all methods used. 
+	%
+	CAO and CQO showed convergence problems, especially in unequal tolerance CQOs. 
+	%
+	CAO only estimated all parameters in one of the models (\textit{Uni-Lo}) and failed to estimate any parameters in all models with only linear and logistic gradients.
+	%
+	As was to be expected, CQO performed best with uni- and bimodal gradients. 
+	%
+	The constrained coefficient of linear and logistic gradients were frequently  at the level of noise variables.\\
+
+
+%------------------------------%
+%& 			GLMmv				
+%------------------------------%
+
+% TODO Viele p-werte unter 0.05 in 15x15 uni 
+
+	GLM$_{mv}$s were least influenced by different response types. 
+	%
+	They were, however, affected strongest by low sample sizes, as all class four models failed to converge.
+	%
+	The lowest multivariate \textit{p}-values for noise variables occurred in models that violated the random residuals assumptions (\textit{Li-Bi} and \textit{Lo-Lo}) and thus would likely not be regarded as reliable.
+	%
+	Species have high univariate \textit{p}-values for a gradient if they reach their optimum near or at the middle of the gradient's sampled range.
+	% 
+	This is caused by low estimated regression coefficients, which is likely due to the symmetrical nature of the response (see Response Symmetry in GLMs in the Supplementary Materials).
+	%
+	As it is highly unlikely to observe perfectly symmetrical response shapes right at the middle of the sampled gradient range, it is fair to assume that these problems were due to the simulation set up and improbable in field data.  
+	%
+	Another problem of GLM$_{mv}$ is the long runtime, which is due to the resampling \citep{Wang2012}.
+	%
+	%
+	By resampling, one avoids having to specify the correlation between species in the model.
+	%
+	The correlation is accounted for at the inference stage by resampling observations across independent sites \citep{anderson2001new}. 
+	%
+	Models that include the correlation structure explicitly avoid resampling and thus can reduce computation time.
+	%
+	First advances in this direction have been made, e.g. by \citet{Jamil2012} who used the site effect of a Generalized Linear Mixed Model (GLMM) to induce equal correlation between all species pairs.\\
+	%
+	In contrast to the other considered methods, GLM$_{mv}$s do not reduce the dimensions of the data. 
+	%
+	Visualizing the multivariate and thus multidimensional data is therefore cumbersome.
+	%
+	Indeed, no easy-to-use and to interpret method to present the output of GLM$_{mv}$s is available. \\
+	%
+	Many features of GLM$_{mv}$s remain unexplored in this study. 
+	%
+	I only tested the model under the assumption of independence of species.
+	%
+	Other correlation type settings can account for dependence between species, either with an unstructured correlation matrix (only advisable when $N>S$) or by shrinking the correlation matrix towards identity using ridge regularization \citep{warton2008penalized}.
+	%  
+	These correlation types necessitate the usage of another test statistic than the likelihood ratio. 
+	% 
+	Currently, the Wald test statistic and the score statistic are also implemented to this end.
+	% 
+	The Wald test statistic makes use of GEE with the sandwich-type-estimator of \citet{Warton2011a} but is unsuitable for count or occurrence data with means at zero. 
+	%
+	For such cases, the score statistic should be used. 
+	%
+	Datasets simulated to test these variants of GLM$_{mv}$ could highlight performance differences even more strongly, as the other methods do not incorporate adjustments to these properties. \\
+
+%------------------------------%
+%& 		db-RDA		
+%------------------------------%
+
+	db-RDA also proved to be robust to different response types and sample sizes. 
+	%
+	Although, low samples sizes decreased the method's power in \textit{Uni-Lo} and \textit{Uni-Li}. 
+	%
+	The six models with high \textit{env2} \textit{p}-values (cf. Figure \ref{fig:p-compare}) are all class four models.
+	%  
+	db-RDA's good performance is in concert with other simulation studies \citep[e.g.][]{Roberts2009}.
+	%
+	Hence, its popularity in the ecological community seems justified. 
+	%
+	These results are only valid for the Bray-Curtis Distance metric, which was used here.
+	%  
+	Other measures would likely have produced different results, 
+	therefore the selection of an appropriate metric is a crucial step in any db-RDA analysis.
+	%  
+	Having to choose a single metric can be avoided by using consensus RDA \citep{Blanchet2014}.
+	% 
+	In this novel method, multiple db-RDA are run, only differing in their distance metric. 
+	%
+	Site scores on statistically significant axes are combined into one matrix which acts as response matrix in a new RDA. 
+	%
+	This method extracts the information that is common to all individual models.
+	%
+	Simulation studies comparing properties of consensus RDA with those individual db-RDA and other methods, distance- or model-based, are lacking.
+	% 
+	Another avenue for future development of db-RDA would be novel distance metrics, but there have been no recent developments (M. J.Anderson, pers. comm.).\\
+
+%------------------------------%
+%& 				CCA				
+%------------------------------%
+
+The CCA performed worst of the methods tested. 
+%
+Linear responses were categorically assigned high \textit{p}-values if they were combined with other response types. 
+%
+The method should thus not be used for combinations of linear and non-linear responses.
+%
+Linear response usually occur if the sampled gradient is short relative to the species' tolerance. 
+%
+For axes as well as terms the noise \textit{p}-values were lower than in other methods.
+% 
+Most low \textit{p}-values for noise variables in CCA occurred in uni- or bimodal models. 
+%
+Given that \textit{Uni-Uni} fits the expectations of the species packing model and bimodal models do not deviate strongly (responses are symmetric but not bell-shaped), this is surprising.
+%
+These models also had higher inertia than those with linear or logistic gradients, which suggests that the type-I-error rate might be related to the inertia (see Supplementary Materials Table \ref{tab:smcca5} and \ref{tab:smcca6}). 
+%
+Given that the triplots (see Supplementary Materials Figure \ref{fig:smccaord}) are not skewed by noise variables with low \textit{p}-values, the problem might also reside in the method that is used to calculate the \textit{p}-values. \\
+%
+%The low total inertia in models with linear gradients might be the reason that CCA assigned high \textit{p}-values to these gradient and axes that were determined by them.
+%%
+%Even if the ratio of constrained to total inertia is higher in the linear gradient, the non-linear one will always introduce more total inertia and therefore in absolute terms also more constrained inertia to the CCA. \\
+%
+Newer approaches to CCA that can correct for zero inflation \citep{Zhang2012} or non-linear relationships between predictor and response variable \citep{Makarenkov2002} are available but not widely used.  \citet{TerBraak2015} advocate to move beyond Gaussian Ordination and further develop methods that are based on smooth functions, like the CAO. \\
+
+%------------------------------%
+%& 			CAO					
+%------------------------------%
+	%In this study CAO was mainly used as a exploratory method as suggest by \citet{Yee2006}.
+%
+	%Nevertheless, it is instructive to regard its results in their own rights. 
+%
+	In CAO, estimation of optima and maxima failed in all models that only included linear and logistic responses.
+	%
+	In most other models, estimates for some species were missing, particularly those with optima close to the end of the sampling range. 
+	%
+	Species maxima were underestimated in all response type combinations.
+	%
+	This was strongest in \textit{Uni-Uni} and \textit{Uni-Bi}, which adhere the closest to the assumptions of CQO.\\ 
+	%
+	In most models, only one gradient significantly influenced the latent variable (see Figure \ref{fig:caoonlyone}), even if both gradients were identical (e.g. \textit{Uni-Uni}). 
+	%
+	This problem might improve with rank-2 CAOs but further tests, also with more than two environmental variables, are necessary.  
+	%
+	Using a CAO to test for unimodality and thus whether to use or to discard a variable for a CQO was rather conservative for these data.
+	%
+	Parameter estimation even failed for some species in \textit{Uni-Uni} and \textit{Uni-Bi}. 
+	%
+	\citet{Jamil2013} present an alternative, graphical tool based on GLMMs to test for unimodality, which was applied by \citet{jamil2014unimodal}, though not in connection with CQO. 
+	%
+	Overall, the CAO was no reliable guide CQO-suitability and estimated species parameters systematically diverged from the actual values. 
+	%
+	However, many features of this method, e.g. rank-2 models and further residual distributions, are not yet implemented in VGAM  \citep{yee2015vector}.
+	%
+	Alternative methods using smooth functions for ordination are also available \citep[e.g.][]{schnabel2012modeling}\\
+
+%------------------------------%
+%& 			CQO					
+%------------------------------%
+
+	The weight that CQO assigned to different response types varied strongly.
+	%
+	The mean weight of environmental gradients was always higher than that of noise variables, but some individual linear or logistic gradients have constrained coefficients on the level of noise variables.  
+	%
+	Uni- and bimodal gradients had higher weights than linear or logistic ones. 
+	%
+	However, the response types also influenced each other. 
+	%
+	The weight of uni- or bimodal gradients was much lower when combined with linear or logistic gradients instead of each other.
+	%
+	How the influence of gradient types on each others constrained coefficient develops in settings with more than just two variables, as one would expect in actual communities, would be an interesting avenue for further studies. \\
+	%
+	The impact of different numbers of samples and noise variables was, besides the convergence problems with some class four models, negligible.
+	%  
+	The same holds true for different tolerance settings. 
+	%
+	The most notable difference was the lower convergence rate in unequal tolerance models.
+	%
+	Equal tolerance models ran longer than those with unequal and identity tolerance. 
+	%
+	Since tolerances have to be estimated individually in unequal tolerance models these were expected to run the longest \citep{yee2015vector}.  
+	%
+	The estimates for abundance maxima were very inaccurate and mostly too high. Based on the strength of divergence between estimated and real values, I advise against using these maxima.\\
+	%  %Baselga & Araújo 2009 finde ich nicht mehr 
+	Up until now, usage of CQO and CAO is seldom in ecological studies and mostly within fisheries research (e.g. \citet{Vilizzi2012}, \citet{Top2016} and \citet{Carosi2017}). 
+	% 
+	\citet{TerBraak2015} suggest that this is due to limitations on the number of species that can be included, a steep learning curve and numerical instability. 
+	%
+	This study confirmed that in its current state the method has issues with convergence and parameter estimations. 
+	%
+	It is especially concerning that the weights of unimodal gradients can be decreased by other non-unimodal gradients and that estimated maxima are overestimated. \\ 
+
+%------------------------------%
+%& 		Simulated Data			
+%------------------------------% 
+
+	Further steps can be taken, to render the simulated data more alike actual field data. 
+	%
+	\citet{Austin1999} criticized unimodal and symmetric response curves as overly simplistic and \citet{austin1994determining} proposed beta-functions to simulate unimodal but asymmetrical shapes. 
+	%
+	However, in a study of \citet{Oksanen2002} only about 20\% of the responses were strongly skewed, while symmetric and bell shaped responses were the most common. 
+	%
+	In this study, I opted to use bimodal and logistic responses as skewed versions of the bell-shape instead of beta functions. \\
+	%
+	Also, species abundances were only determined by the environmental gradients. 
+	%
+	Stochasticity can be added to one or to both ends of the relationship. 
+	%
+	For example, in form of a random term, which is added to the abundances or environmental variables \citep[e.g][]{McCune1997}.
+	%
+	Likewise, observation errors can be included via binomial functions, as is done in N-mixture models \citep{royle2004n},
+	to examine how susceptible a method is towards regression dilution \citep[e.g.][]{frost2000correcting, McInerny2011}.
+	%
+	Lastly, when noise is added to response and explanatory variables this would, given the noise is simulated from the same distribution both times, likely result in endogeneity, i.e. a non-zero covariance between the residuals and one or more explanatory variables. 
+	%
+	Simulations with induced endogeneity would be interesting as this phenomenon might be underappreciated by ecologists \citep{armsworth2009contrasting, fox2015ecological}. \\ 
+
+% ---------------------------------------- %
+%&		Andere Vergleichende Studien		
+% ---------------------------------------- %
+ 
+ 	The methods that were compared in this study have never been directly compared before. 
+ 	%
+ 	Most similar is the work of \citet{Warton2012}, who compare GLM$_{mv}$ to CCA and RDA (not db-RDA) among others. 
+ 	%
+ 	They showed that only GLM$_{mv}$ successfully differentiates between location effect (difference in means) and dispersion effect (difference in variance). 
+ 	%
+ 	However, comparative studies of multivariate methods, in general, are common. 
+ 	%
+ 	Especially ordination techniques like CCA and RDA were subject to extensive testing in the 1970s and 1980s \citep[e.g.][]{GauchJr.1972, GauchJr1977, Kenkel1986}. 
+ 	%
+ 	To my knowledge, \citet{Roberts2008} and \citet{Roberts2009} are the only studies that methodically compare db-RDA to other methods. 
+ 	%
+ 	Both compare db-RDA, CCA and Multidimensional Fuzzy Set Ordinations (MFSO). \citet{Roberts2008} uses simulated data sets to this end, while \citet{Roberts2009} uses four different sets of field data. 
+ 	%
+ 	Both studies concur that db-RDA outperforms CCA and is tied with or performs slightly inferior to MFSO. 
+ 	%
+ 	CQO/CAO are occasionally tested in comparisons of individual and community level species distribution models (e.g. \citet{Baselga2009} and \citet{Maguire2016}), where they are an instance of the latter.
+ 	%
+ 	They were generally not found to significantly improve upon the individual models (e.g. GLMs or Regression Trees). 
+ 	\\
+ 
+%------------------------------------------------%
+%& Andere Vielversprechende Model-based approaches
+%------------------------------------------------%
+
+	While one (GLM$_{mv}$) model-based approach outperformed both the distance-based and the algorithmic approach, the other (CQO) was not clearly superior, at least not to db-RDA.
+	%
+	Both, GLM$_{mv}$ and db-RDA proved robust towards any response type tested herein, while both having poorer properties with little sample sizes. 
+	%
+	CCA should not be used for linear responses, i.e. short gradients, and the term \textit{p}-values are very low for noise variables, especially in models with high inertia. 
+	%
+	The comparison to CAO and CQO is complicated by the absence of a common statistic. 
+	%
+	Both showed issues with convergence and estimation accuracy. 
+	%
+	Constrained Coefficients varied strongly between response types and within some models (CAO e.g. \textit{Uni-Uni}, CQO e.g. \textit{Li-Bi}). 
+	%
+	Even for models with unimodal response type CQO severely overestimated the maximal abundances, this parameter should hence not be used. 
+	%
+	This study thus showed, that some but not all approaches in model-based multivariate inference have considerable potential and can outperform more common distance-based or algorithmic methods. 
+	%
+	As these models are still at an early stage, new developments and increases in computation speed can be expected.   
+	\\
+
+	% ------------------------- %
+	%&		Joint Models		
+	% ------------------------- %
+	
+	An especially active area are models using joint probability distributions \citep[e.g.][]{Clark2014, Pollock2014}. 
+	%
+	While GLM$_{mv}$ estimate the mean of the conditional distribution $Y_s$   given  $\mathbf{X}$ ($\hat{E}(Y_s|\mathbf{X})$) separately for each species and CQO combine all species to estimate the latent variable but regress each species separately against them,
+	joint models estimate the joint distribution of all species conditional on the environmental variables.  
+	%
+	%\citet{Clark2014} show that basal area of trees is better predicted by joint distribution models than by independently calibrated models. 
+	%
+	A common interest of many joint models is to imply biotic interactions from the residuals of the species-environment interaction, 
+	%
+	as these two sets of predictors (biotic and biotic) were shown to have little redundancy \citep{Meier2010}.
+	%
+	Some of the models also anticipate the challenges of Big Data for ecology \citep{Hampton2013}.
+	%
+	\textit{Generalized Linear Latent Variable Models}, for example, include latent variables instead of random effects to capture residual correlation, which significantly reduces the size of the variance -- covariance matrix \citep{Warton2015,Niku2017}.  
+	%
+	In HMSC \citep{Ovaskainen2017} this approach is coupled with a fourth corner model \cite[including species traits, ][]{legendre1997relating} and phylogenetic relationships to make sense of many types of data.
+	%
+	To the same end, GJAMs allow for different kinds of data (e.g. continuous, discrete counts, ordinal counts and occurrence) to be included in the same response variable and have outperformed Poisson GLM on discrete count data and a Bernoulli GLM on binary host status data in a recent simulation study \citep{Clark2017}. \\
+	
+	
+	It is now essential that ways to infer ecological processes from the modeled patterns develop at a similar pace, to avoid confusing statistical artifacts with genuine biological signals \citep{dormann2018biotic}.
+	%
+	If this succeeds, a move form distance-based and algorithmic methods towards model-based methods might entail one from the current implicit Gleassonian towards a from of modern Clementsian perspective \citep{Eliot2011}; from asking how do individual species change along environmental gradients towards asking how do communities change as a whole.   
+
+
+%---
+%& GJAM
+%---
+
+ 
+% GJAM (avialable in gjam R package )  allow for different kinds of response data to be modeled for the same species. This includes continuous (e.g. biomass or density), discrete counts, ordinal counts (none, some, many) and incidence (present, absent). They also include the relative measurement effort (e.g. search time for counts or core volume sediment cores), since higher effort is likely to lead to reduced variability. In a simulation study GJAM outperformed Poisson GLM on discrete count data and a Bernoulli GLM on binary host status data \citep{Clark2017}.  
+
+
+%%% --- Allgemein--- %%%
+% - usually gradients are not the measured variables 
+% - biotic interaction, succseional or priority effects not considered , changes in species richness along gradients.
+% - GLMmv nicht ausgereizt. 
+
+
+

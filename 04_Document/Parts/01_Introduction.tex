@@ -1,0 +1,130 @@
+% !TeX spellcheck = en_US
+
+%------------------------------%
+%&			To Do
+%------------------------------%
+
+
+\section{Introduction}
+
+	%------------------------------%
+	%&			Erste Absatz:
+	%&	Eternal Question + Statisticians point of view 
+	%------------------------------%
+
+	Which environmental gradients drive the changes in species abundances and community composition?
+	%
+	This is one of the oldest questions in ecology \citep[e.g.][]{Clements1907}  and the prospect of humans altering their surroundings at an unprecedented rate endows it with a new urgency \citep{pacifici2015assessing}.
+	%
+	To answer 	it, ecologists typically record the abundance or occurrence of different taxa and several environmental variables (e.g. precipitation or exposure to stressors), at different sites.
+	%
+	This results in a sites-by-species matrix $\mathbf{Y}$ containing multivariate species abundances, which is then statistically related to  a sites-by-predictor matrix $\mathbf{X}$, containing the environmental variables.
+	%
+	From a statisticians point of view, $\mathbf{Y}$ has many undesirable properties: 
+	correlation within and between variables, 
+	e.g. through biotic interactions \citep{morales2015inferring},
+	probability distributions other than the normal, 
+	more species than sites \citep[\textit{high dimensionality}, especially in DNA Barcoding studies, ][]{cristescu2014barcoding}  
+	and many zeros, since most species are commonly absent from most sites (\textit{sparsity}). \\
+	
+	%------------------------------%
+	%&		Zweite Absatz:
+	%&	Distance Based + Whats wrong with it
+	%------------------------------%
+	
+	
+	Multivariate species abundances are frequently analyzed by means of their distance or dissimilarity matrix \citep[distance-based analysis \textit{sensu}][]{Warton2012}. 
+	%
+	This approach is popular among ecologists because it is non-parametric and hence distribution-free \citep[e.g.][]{clarke1993non}.
+	% question ist schlecht 
+	Whether a distance metric is appropriate depends on the properties of the data and the aim of the study, as each metric extracts different information from the raw data. 
+	%
+	The choice is complicated by the vast amount of available metrics \citep[see][]{Legendre2012} and contradicting recommendations \citep[][]{faith1987compositional}.
+	%
+	Deploying a distance metric, one also implicitly assumes a mean-variance relationship in the data. For example, the Minkowski distances (e.g. Manhattan and Euclidean) assume a constant variance across all mean values \citep{TerBraak1988}.  
+	%
+	However, species abundances often show a quadratic mean-variance relationship \citep{routledge1991taylor, yamamura1999transformation}.
+	%
+	Miss-specifying the relationship by choosing an improper distance metric can lead to erroneous conclusions about one's data, as was shown by \citet{Warton2012}.
+	%
+	An alternative to distance-based analysis, that avoids this issue, is the model-based approach.\\ 
+ 
+	%------------------------------%
+	%&		Dritte Absatz:
+	%&	Model Based Approach
+	%------------------------------%
+
+
+	The model-based approach to multivariate data analysis entails explicitly specifying a statistical model of the process that generated the observed data \citep{Warton2015a}.
+	%
+	This includes the mean-variance relationship, which can be adjusted to the properties of the data.
+	%
+	Despite their ubiquity in univariate analyses, model-based approaches have long been uncommon in multivariate ecological analyses.
+	%
+    However, advances in statistical theory and computation power have led to a surge of models for multivariate abundance data. 
+	%
+	Recent examples include \textit{Hierarchical Modeling of Species Communities} \citep[HMSC,][]{Ovaskainen2017}, \textit{Generalized Joint 
+	%
+	Attribute Modelling} \citep[GJAM,][]{Clark2017} and \textit{multivariate Generalized Linear Models} \citep[GLM$_{mv}$,][]{Warton2012}.\\
+	
+	%------------------------------%
+	%&		Vierte Absatz:
+	%&			GLMmv
+	%------------------------------%
+	
+	In GLM$_{mv}$, a separate univariate GLM is fit to each taxon, each model using the same predictors. 
+	%
+	Univariate GLMs are a powerful and flexible method. 
+	%
+	They are strongly advocated for the analysis of count or occurence data as they can handle different residual distributions and mean-variance relationships \citep{OHara2010, Warton2011, Szocs2015_b}.
+	%
+	Extending them to multi-species abundance data was thus a natural starting point for multivariate model-based analyses \citep{Warton2012}.
+	%
+	The univariate models are combined by  summing their test statistics, which enables the researcher to draw conclusions about the whole community.
+	%
+	GLM$_{mv}$ were one of the earlier multivariate models with an easy-to-use implementation \citep[in the \textit{mvabund} R-package, ][]{Wang2018} and  
+	since their introduction they have gained traction within the ecological community (244 citations according to the Web of Science as of 24.04.2018). 
+	%
+	To my knowledge, the simulations of \citet{Warton2012} remain the only test of GLM$_{mv}$ with simulated data until now.
+	%
+	\citet{Szocs2015} tested GLM$_{mv}$ with data from ecotoxicological mesocosm studies, and found that they performed better or at least as well as commonly used methods (Principal Response Curves).
+	%
+	They also emphasized the need for further simulation studies on GLM$_{mv}$.\\
+
+	%------------------------------%
+	%&		5. Absatz:
+	%&		Aim of the Study
+	%------------------------------%
+	
+	The aim of this study is to test the ability of four statistical methods to determine which environmental gradients drive the changes in sets of simulated multivariate abundance data. 
+	%
+	The performance of GLM$_{mv}$ will be compared to \textit{Distance Based Redundancy Analysis} (db-RDA), \textit{Canonical Correspondence Analysis} (CCA) as well as \textit{Constrained Additive} and \textit{Quadratic Ordination} (CAO/ CQO).
+
+	%------------------------------%
+	%&		6. Absatz:
+	%&		Other Methods
+	%------------------------------%
+	
+	% db-RDA
+	db-RDA is a distance-based analysis. 
+	%
+	It calculates an ordination on the distance matrix of the sites-by-species  matrix $\mathbf{Y}$ constrained by the environmental variables $\mathbf{X}$ \citep{Legendre1999, AndersonMati2003}.
+	%
+	db-RDA was highlighted by \citet{Szocs2015}, because the possibility to use asymmetrical distance metrics and avoid the \textit{double-zero problem } \citep{Legendre2012} makes them attractive for sparse data sets. 
+	% CCA
+	CCA and CQO are both solutions to Constrained Gaussian Ordination (CGO), in which species are expected to respond unimodally to latent gradients that are linear combinations of environmental variables \citep{gauch1974ordination}. 
+	%
+	CCA is an algorithmic solution (neither distance- nor model-based), that is based on the findings of \citet{TerBraak1986}. 
+	%
+	He showed that the maximum likelihood estimation of CGO for Poisson distributed counts can be approximated by correspondence analysis, given that a set of restrictive assumption hold (see section 2.4). 
+	%
+	CCA is one of the most widely used statistical techniques in ecology, with the essential papers having accumulated over 3000 citations \citep{Braak2014}.
+	% CAO/ CQO
+	CQO is the maximum likelihood solution to CGO \citep{Yee2004}. 
+	%
+	It uses an extension to GLM, \textit{Vector Generalized Linear Models} \citep[VGLM,][]{yee1996vector}, to estimate model parameters and is hence model-based. 
+	%
+	\citet{Yee2006} proposed CAO as a modification to CQO, that uses additive instead of linear models and is thus more flexible and data-driven. \\
+	
+
+
