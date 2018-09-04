@@ -119,29 +119,29 @@
 %& 				CCA				
 %------------------------------%
 
-The CCA performed worst of the methods tested. 
-%
-Linear responses were categorically assigned high \textit{p}-values if they were combined with other response types. 
-%
-The method should thus not be used for combinations of linear and non-linear responses.
-%
-Linear response usually occur if the sampled gradient is short relative to the species' tolerance. 
-%
-For axes as well as terms the noise \textit{p}-values were lower than in other methods.
-% 
-Most low \textit{p}-values for noise variables in CCA occurred in uni- or bimodal models. 
-%
-Given that \textit{Uni-Uni} fits the expectations of the species packing model and bimodal models do not deviate strongly (responses are symmetric but not bell-shaped), this is surprising.
-%
-These models also had higher inertia than those with linear or logistic gradients, which suggests that the type-I-error rate might be related to the inertia (see Supplementary Materials Table \ref{tab:smcca5} and \ref{tab:smcca6}). 
-%
-Given that the triplots (see Supplementary Materials Figure \ref{fig:smccaord}) are not skewed by noise variables with low \textit{p}-values, the problem might also reside in the method that is used to calculate the \textit{p}-values. \\
-%
-%The low total inertia in models with linear gradients might be the reason that CCA assigned high \textit{p}-values to these gradient and axes that were determined by them.
-%%
-%Even if the ratio of constrained to total inertia is higher in the linear gradient, the non-linear one will always introduce more total inertia and therefore in absolute terms also more constrained inertia to the CCA. \\
-%
-Newer approaches to CCA that can correct for zero inflation \citep{Zhang2012} or non-linear relationships between predictor and response variable \citep{Makarenkov2002} are available but not widely used.  \citet{TerBraak2015} advocate to move beyond Gaussian Ordination and further develop methods that are based on smooth functions, like the CAO. \\
+	The CCA performed worst of the methods tested. 
+	%
+	Linear responses were categorically assigned high \textit{p}-values if they were combined with other response types. 
+	%
+	The method should thus not be used for combinations of linear and non-linear responses.
+	%
+	Linear response usually occur if the sampled gradient is short relative to the species' tolerance. 
+	%
+	For axes as well as terms the noise \textit{p}-values were lower than in other methods.
+	% 
+	Most low \textit{p}-values for noise variables in CCA occurred in uni- or bimodal models. 
+	%
+	Given that \textit{Uni-Uni} fits the expectations of the species packing model and bimodal models do not deviate strongly (responses are symmetric but not bell-shaped), this is surprising.
+	%
+	These models also had higher inertia than those with linear or logistic gradients, which suggests that the type-I-error rate might be related to the inertia (see Supplementary Materials Table \ref{tab:smcca5} and \ref{tab:smcca6}). 
+	%
+	Given that the triplots (see Supplementary Materials Figure \ref{fig:smccaord}) are not skewed by noise variables with low \textit{p}-values, the problem might also reside in the method that is used to calculate the \textit{p}-values. \\
+	%
+	%The low total inertia in models with linear gradients might be the reason that CCA assigned high \textit{p}-values to these gradient and axes that were determined by them.
+	%%
+	%Even if the ratio of constrained to total inertia is higher in the linear gradient, the non-linear one will always introduce more total inertia and therefore in absolute terms also more constrained inertia to the CCA. \\
+	%
+	Newer approaches to CCA that can correct for zero inflation \citep{Zhang2012} or non-linear relationships between predictor and response variable \citep{Makarenkov2002} are available but not widely used.  \citet{TerBraak2015} advocate to move beyond Gaussian Ordination and further develop methods that are based on smooth functions, like the CAO. \\
 
 %------------------------------%
 %& 			CAO					
@@ -264,7 +264,7 @@ Newer approaches to CCA that can correct for zero inflation \citep{Zhang2012} or
 %& Andere Vielversprechende Model-based approaches
 %------------------------------------------------%
 
-	While one (GLM$_{mv}$) model-based approach outperformed both the distance-based and the algorithmic approach, the other (CQO) was not clearly superior, at least not to db-RDA.
+	In this study, one (GLM$_{mv}$) model-based approach outperformed both the distance-based and the algorithmic approach, while the other (CQO) was not clearly superior, at least not to db-RDA.
 	%
 	Both, GLM$_{mv}$ and db-RDA proved robust towards any response type tested herein, while both having poorer properties with little sample sizes. 
 	%

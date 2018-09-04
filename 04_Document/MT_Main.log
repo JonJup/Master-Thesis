@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.28)  3 SEP 2018 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.28)  4 SEP 2018 08:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,56 +1215,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--67
  []
 
 [3]
-<../02_Figures/05_Modelle/Uni-Uni_50x50.jpeg, id=258, 418.56375pt x 418.56375pt
->
-File: ../02_Figures/05_Modelle/Uni-Uni_50x50.jpeg Graphic file (type jpg)
-<use ../02_Figures/05_Modelle/Uni-Uni_50x50.jpeg>
-Package pdftex.def Info: ../02_Figures/05_Modelle/Uni-Uni_50x50.jpeg  used on i
-nput line 80.
+<../02_Figures/Uni-Uni_Model.jpeg, id=258, 418.56375pt x 418.56375pt>
+File: ../02_Figures/Uni-Uni_Model.jpeg Graphic file (type jpg)
+<use ../02_Figures/Uni-Uni_Model.jpeg>
+Package pdftex.def Info: ../02_Figures/Uni-Uni_Model.jpeg  used on input line 8
+0.
 (pdftex.def)             Requested size: 140.84258pt x 140.84082pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
-<../02_Figures/05_Modelle/Uni-Li_50x50.jpeg, id=259, 451.6875pt x 451.6875pt>
-File: ../02_Figures/05_Modelle/Uni-Li_50x50.jpeg Graphic file (type jpg)
-<use ../02_Figures/05_Modelle/Uni-Li_50x50.jpeg>
-Package pdftex.def Info: ../02_Figures/05_Modelle/Uni-Li_50x50.jpeg  used on in
-put line 86.
+<../02_Figures/Uni-Li_Model.jpeg, id=259, 451.6875pt x 451.6875pt>
+File: ../02_Figures/Uni-Li_Model.jpeg Graphic file (type jpg)
+<use ../02_Figures/Uni-Li_Model.jpeg>
+Package pdftex.def Info: ../02_Figures/Uni-Li_Model.jpeg  used on input line 86
+.
 (pdftex.def)             Requested size: 140.84258pt x 140.84184pt.
-<../02_Figures/05_Modelle/Lo-Bi_50x50.jpeg, id=260, 418.56375pt x 418.56375pt>
-File: ../02_Figures/05_Modelle/Lo-Bi_50x50.jpeg Graphic file (type jpg)
-<use ../02_Figures/05_Modelle/Lo-Bi_50x50.jpeg>
-Package pdftex.def Info: ../02_Figures/05_Modelle/Lo-Bi_50x50.jpeg  used on inp
-ut line 91.
+<../02_Figures/Lo-Bi_Model.jpeg, id=260, 418.56375pt x 418.56375pt>
+File: ../02_Figures/Lo-Bi_Model.jpeg Graphic file (type jpg)
+<use ../02_Figures/Lo-Bi_Model.jpeg>
+Package pdftex.def Info: ../02_Figures/Lo-Bi_Model.jpeg  used on input line 91.
+
 (pdftex.def)             Requested size: 140.84258pt x 140.84082pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--123
+
+ []
 
 
 Package nag Warning: `center' environment in table.
-(nag)                Maybe you want \centering instead on input line 143.
+(nag)                Maybe you want \centering instead on input line 144.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--152
+Underfull \hbox (badness 10000) in paragraph at lines 148--153
 
  []
 
 <../02_Figures/Flowchart.pdf, id=267, 586.19pt x 195.73125pt>
 File: ../02_Figures/Flowchart.pdf Graphic file (type pdf)
 <use ../02_Figures/Flowchart.pdf>
-Package pdftex.def Info: ../02_Figures/Flowchart.pdf  used on input line 158.
+Package pdftex.def Info: ../02_Figures/Flowchart.pdf  used on input line 159.
 (pdftex.def)             Requested size: 469.47049pt x 156.75543pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--170
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
 
  []
 
-[4 <../02_Figures/05_Modelle/Uni-Uni_50x50.jpeg> <../02_Figures/05_Modelle/Uni-
-Li_50x50.jpeg> <../02_Figures/05_Modelle/Lo-Bi_50x50.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 177--196
+[4 <../02_Figures/Uni-Uni_Model.jpeg> <../02_Figures/Uni-Li_Model.jpeg> <../02_
+Figures/Lo-Bi_Model.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 178--197
 
  []
 
@@ -1274,27 +1277,27 @@ pdfTeX warning: /usr/bin/pdflatex (file ../02_Figures/Flowchart.pdf): PDF inclu
 sion: invalid other resource which is no dict (key 'ProcSets', type <array>); i
 gnored.
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 197--204
+Underfull \hbox (badness 10000) in paragraph at lines 198--205
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 276--281
+Underfull \hbox (badness 10000) in paragraph at lines 277--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--311
+Underfull \hbox (badness 10000) in paragraph at lines 300--312
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 359--386
+Underfull \hbox (badness 10000) in paragraph at lines 360--387
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 388--404
+Underfull \hbox (badness 10000) in paragraph at lines 389--405
 
  []
 
@@ -1314,13 +1317,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--103
  []
 
 [10]
-<../02_Figures/01_GLMmv/glm_uni_hohep.jpeg, id=474, 786.68906pt x 377.91188pt>
-File: ../02_Figures/01_GLMmv/glm_uni_hohep.jpeg Graphic file (type jpg)
-<use ../02_Figures/01_GLMmv/glm_uni_hohep.jpeg>
-Package pdftex.def Info: ../02_Figures/01_GLMmv/glm_uni_hohep.jpeg  used on inp
-ut line 134.
+<../02_Figures/glm_uni_hohep.jpeg, id=474, 786.68906pt x 377.91188pt>
+File: ../02_Figures/glm_uni_hohep.jpeg Graphic file (type jpg)
+<use ../02_Figures/glm_uni_hohep.jpeg>
+Package pdftex.def Info: ../02_Figures/glm_uni_hohep.jpeg  used on input line 1
+34.
 (pdftex.def)             Requested size: 422.52057pt x 202.9795pt.
- [11 <../02_Figures/01_GLMmv/glm_uni_hohep.jpeg>]
+ [11 <../02_Figures/glm_uni_hohep.jpeg>]
 <../02_Figures/P-Compare.jpeg, id=479, 739.26187pt x 505.13719pt>
 File: ../02_Figures/P-Compare.jpeg Graphic file (type jpg)
 <use ../02_Figures/P-Compare.jpeg>
@@ -1341,11 +1344,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
-<../02_Figures/02_CAO/CAO_loadings.jpeg, id=487, 908.64468pt x 453.94594pt>
-File: ../02_Figures/02_CAO/CAO_loadings.jpeg Graphic file (type jpg)
-<use ../02_Figures/02_CAO/CAO_loadings.jpeg>
-Package pdftex.def Info: ../02_Figures/02_CAO/CAO_loadings.jpeg  used on input 
-line 283.
+<../02_Figures/CAO_loadings.jpeg, id=487, 908.64468pt x 453.94594pt>
+File: ../02_Figures/CAO_loadings.jpeg Graphic file (type jpg)
+<use ../02_Figures/CAO_loadings.jpeg>
+Package pdftex.def Info: ../02_Figures/CAO_loadings.jpeg  used on input line 28
+3.
 (pdftex.def)             Requested size: 469.47049pt x 234.54323pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1355,11 +1358,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--325
 
  []
 
-<../02_Figures/02_CAO/CQOPlotalsJpg.jpeg, id=496, 677.53125pt x 375.65344pt>
-File: ../02_Figures/02_CAO/CQOPlotalsJpg.jpeg Graphic file (type jpg)
-<use ../02_Figures/02_CAO/CQOPlotalsJpg.jpeg>
-Package pdftex.def Info: ../02_Figures/02_CAO/CQOPlotalsJpg.jpeg  used on input
- line 338.
+<../02_Figures/CQOPlotalsJpg.jpeg, id=496, 677.53125pt x 375.65344pt>
+File: ../02_Figures/CQOPlotalsJpg.jpeg Graphic file (type jpg)
+<use ../02_Figures/CQOPlotalsJpg.jpeg>
+Package pdftex.def Info: ../02_Figures/CQOPlotalsJpg.jpeg  used on input line 3
+38.
 (pdftex.def)             Requested size: 469.47049pt x 260.30168pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1374,12 +1377,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--34
 
  []
 
-[14 <../02_Figures/02_CAO/CAO_loadings.jpeg>]
+[14 <../02_Figures/CAO_loadings.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 42--86
 
  []
 
-[15 <../02_Figures/02_CAO/CQOPlotalsJpg.jpeg>]
+[15 <../02_Figures/CQOPlotalsJpg.jpeg>]
 Underfull \hbox (badness 10000) in paragraph at lines 91--117
 
  []
@@ -1449,31 +1452,30 @@ Missing character: There is no ù in font ptmr7t!
 
 
 (./Parts/05_Anhang.tex
-<../02_Figures/uniglm/uniglm.pdf, id=707, 464.73625pt x 352.31625pt>
-File: ../02_Figures/uniglm/uniglm.pdf Graphic file (type pdf)
-<use ../02_Figures/uniglm/uniglm.pdf>
-Package pdftex.def Info: ../02_Figures/uniglm/uniglm.pdf  used on input line 20
-.
+<../02_Figures/uniglm.pdf, id=707, 464.73625pt x 352.31625pt>
+File: ../02_Figures/uniglm.pdf Graphic file (type pdf)
+<use ../02_Figures/uniglm.pdf>
+Package pdftex.def Info: ../02_Figures/uniglm.pdf  used on input line 20.
 (pdftex.def)             Requested size: 234.73524pt x 177.94786pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--48
 
  []
 
-<../02_Figures/uniglm/bi1.pdf, id=710, 464.73625pt x 352.31625pt>
-File: ../02_Figures/uniglm/bi1.pdf Graphic file (type pdf)
-<use ../02_Figures/uniglm/bi1.pdf>
-Package pdftex.def Info: ../02_Figures/uniglm/bi1.pdf  used on input line 57.
+<../02_Figures/bi1.pdf, id=710, 464.73625pt x 352.31625pt>
+File: ../02_Figures/bi1.pdf Graphic file (type pdf)
+<use ../02_Figures/bi1.pdf>
+Package pdftex.def Info: ../02_Figures/bi1.pdf  used on input line 57.
 (pdftex.def)             Requested size: 234.73524pt x 177.94786pt.
-<../02_Figures/uniglm/bi2.pdf, id=711, 464.73625pt x 352.31625pt>
-File: ../02_Figures/uniglm/bi2.pdf Graphic file (type pdf)
-<use ../02_Figures/uniglm/bi2.pdf>
-Package pdftex.def Info: ../02_Figures/uniglm/bi2.pdf  used on input line 63.
+<../02_Figures/bi2.pdf, id=711, 464.73625pt x 352.31625pt>
+File: ../02_Figures/bi2.pdf Graphic file (type pdf)
+<use ../02_Figures/bi2.pdf>
+Package pdftex.def Info: ../02_Figures/bi2.pdf  used on input line 63.
 (pdftex.def)             Requested size: 234.73524pt x 177.94786pt.
-<../02_Figures/uniglm/bi3.pdf, id=712, 464.73625pt x 352.31625pt>
-File: ../02_Figures/uniglm/bi3.pdf Graphic file (type pdf)
-<use ../02_Figures/uniglm/bi3.pdf>
-Package pdftex.def Info: ../02_Figures/uniglm/bi3.pdf  used on input line 69.
+<../02_Figures/bi3.pdf, id=712, 464.73625pt x 352.31625pt>
+File: ../02_Figures/bi3.pdf Graphic file (type pdf)
+<use ../02_Figures/bi3.pdf>
+Package pdftex.def Info: ../02_Figures/bi3.pdf  used on input line 69.
 (pdftex.def)             Requested size: 234.73524pt x 177.94786pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 55--93
@@ -1490,8 +1492,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--113
 
 [28
 
- <../02_Figures/uniglm/uniglm.pdf>] [29 <../02_Figures/uniglm/bi1.pdf> <../02_F
-igures/uniglm/bi2.pdf> <../02_Figures/uniglm/bi3.pdf>]
+ <../02_Figures/uniglm.pdf>] [29 <../02_Figures/bi1.pdf> <../02_Figures/bi2.pdf
+> <../02_Figures/bi3.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 138.
 
 
@@ -1501,37 +1503,25 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
  [30]
-<"../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/17_S1_plot1".pdf, id=764, 2
-54.9525pt x 518.93875pt>
-File: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/17_S1_plot1".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/17_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/17_
-S1_plot1".pdf  used on input line 198.
+<"../02_Figures/dbRDASM1".pdf, id=764, 254.9525pt x 518.93875pt>
+File: "../02_Figures/dbRDASM1".pdf Graphic file (type pdf)
+<use "../02_Figures/dbRDASM1".pdf>
+Package pdftex.def Info: "../02_Figures/dbRDASM1".pdf  used on input line 198.
 (pdftex.def)             Requested size: 129.10509pt x 262.79445pt.
-<"../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/21_S1_plot1".pdf, id=765, 2
-54.9525pt x 518.93875pt>
-File: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/21_S1_plot1".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/21_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/21_
-S1_plot1".pdf  used on input line 204.
+<"../02_Figures/dbRDASM2".pdf, id=765, 254.9525pt x 518.93875pt>
+File: "../02_Figures/dbRDASM2".pdf Graphic file (type pdf)
+<use "../02_Figures/dbRDASM2".pdf>
+Package pdftex.def Info: "../02_Figures/dbRDASM2".pdf  used on input line 204.
 (pdftex.def)             Requested size: 129.10509pt x 262.79445pt.
-<"../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/33_S1_plot1".pdf, id=766, 2
-54.9525pt x 518.93875pt>
-File: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/33_S1_plot1".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/33_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/33_
-S1_plot1".pdf  used on input line 210.
+<"../02_Figures/dbRDASM3".pdf, id=766, 254.9525pt x 518.93875pt>
+File: "../02_Figures/dbRDASM3".pdf Graphic file (type pdf)
+<use "../02_Figures/dbRDASM3".pdf>
+Package pdftex.def Info: "../02_Figures/dbRDASM3".pdf  used on input line 210.
 (pdftex.def)             Requested size: 129.10509pt x 262.79445pt.
-<"../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/45_S1_plot1".pdf, id=767, 2
-54.9525pt x 518.93875pt>
-File: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/45_S1_plot1".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/45_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/45_
-S1_plot1".pdf  used on input line 215.
+<"../02_Figures/dbRDASM4".pdf, id=767, 254.9525pt x 518.93875pt>
+File: "../02_Figures/dbRDASM4".pdf Graphic file (type pdf)
+<use "../02_Figures/dbRDASM4".pdf>
+Package pdftex.def Info: "../02_Figures/dbRDASM4".pdf  used on input line 215.
 (pdftex.def)             Requested size: 129.10509pt x 262.79445pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 196--218
@@ -1546,37 +1536,25 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 196--218
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/17_S1_plot1".pdf, id=771, 505
-.89pt x 518.93875pt>
-File: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/17_S1_plot1".pdf Graphic
- file (type pdf)
-<use "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/17_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/17_S1
-_plot1".pdf  used on input line 253.
+<"../02_Figures/CCASM1".pdf, id=771, 505.89pt x 518.93875pt>
+File: "../02_Figures/CCASM1".pdf Graphic file (type pdf)
+<use "../02_Figures/CCASM1".pdf>
+Package pdftex.def Info: "../02_Figures/CCASM1".pdf  used on input line 253.
 (pdftex.def)             Requested size: 187.78891pt x 192.6378pt.
-<"../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/21_S1_plot1".pdf, id=772, 505
-.89pt x 518.93875pt>
-File: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/21_S1_plot1".pdf Graphic
- file (type pdf)
-<use "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/21_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/21_S1
-_plot1".pdf  used on input line 259.
+<"../02_Figures/CCASM2".pdf, id=772, 505.89pt x 518.93875pt>
+File: "../02_Figures/CCASM2".pdf Graphic file (type pdf)
+<use "../02_Figures/CCASM2".pdf>
+Package pdftex.def Info: "../02_Figures/CCASM2".pdf  used on input line 259.
 (pdftex.def)             Requested size: 187.78891pt x 192.6378pt.
-<"../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/33_S1_plot1".pdf, id=773, 505
-.89pt x 518.93875pt>
-File: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/33_S1_plot1".pdf Graphic
- file (type pdf)
-<use "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/33_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/33_S1
-_plot1".pdf  used on input line 265.
+<"../02_Figures/CCASM3".pdf, id=773, 505.89pt x 518.93875pt>
+File: "../02_Figures/CCASM3".pdf Graphic file (type pdf)
+<use "../02_Figures/CCASM3".pdf>
+Package pdftex.def Info: "../02_Figures/CCASM3".pdf  used on input line 265.
 (pdftex.def)             Requested size: 187.78891pt x 192.6378pt.
-<"../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/45_S1_plot1".pdf, id=774, 505
-.89pt x 518.93875pt>
-File: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/45_S1_plot1".pdf Graphic
- file (type pdf)
-<use "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/45_S1_plot1".pdf>
-Package pdftex.def Info: "../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/45_S1
-_plot1".pdf  used on input line 270.
+<"../02_Figures/CCASM4".pdf, id=774, 505.89pt x 518.93875pt>
+File: "../02_Figures/CCASM4".pdf Graphic file (type pdf)
+<use "../02_Figures/CCASM4".pdf>
+Package pdftex.def Info: "../02_Figures/CCASM4".pdf  used on input line 270.
 (pdftex.def)             Requested size: 187.78891pt x 192.6378pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 251--273
@@ -1591,44 +1569,29 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 251--273
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32 <../02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/17_S1_plot1.pdf> <.
-./02_Figures/04_dbRDA/01_LLGB/Triplots/Use in SM/21_S1_plot1.pdf> <../02_Figure
-s/04_dbRDA/01_LLGB/Triplots/Use in SM/33_S1_plot1.pdf> <../02_Figures/04_dbRDA/
-01_LLGB/Triplots/Use in SM/45_S1_plot1.pdf>] [33 <../02_Figures/03_CCA/01_LLGB/
-Triplots/use in SM/17_S1_plot1.pdf> <../02_Figures/03_CCA/01_LLGB/Triplots/use 
-in SM/21_S1_plot1.pdf> <../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/33_S1_p
-lot1.pdf> <../02_Figures/03_CCA/01_LLGB/Triplots/use in SM/45_S1_plot1.pdf>]
-<"../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/17_S1_All-Spec_Pos".pdf, id=851, 6
-46.415pt x 303.1325pt>
-File: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/17_S1_All-Spec_Pos".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/17_S1_All-Spec_Pos".pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/17_S1_All-
-Spec_Pos".pdf  used on input line 313.
+[31] [32 <../02_Figures/dbRDASM1.pdf> <../02_Figures/dbRDASM2.pdf> <../02_Figur
+es/dbRDASM3.pdf> <../02_Figures/dbRDASM4.pdf>] [33 <../02_Figures/CCASM1.pdf> <
+../02_Figures/CCASM2.pdf> <../02_Figures/CCASM3.pdf> <../02_Figures/CCASM4.pdf>
+]
+<"../02_Figures/CAO1SM1".pdf, id=851, 646.415pt x 303.1325pt>
+File: "../02_Figures/CAO1SM1".pdf Graphic file (type pdf)
+<use "../02_Figures/CAO1SM1".pdf>
+Package pdftex.def Info: "../02_Figures/CAO1SM1".pdf  used on input line 313.
 (pdftex.def)             Requested size: 258.21019pt x 121.08434pt.
-<"../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/21_S1_All-Spec_Pos".pdf, id=852, 6
-46.415pt x 303.1325pt>
-File: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/21_S1_All-Spec_Pos".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/21_S1_All-Spec_Pos".pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/21_S1_All-
-Spec_Pos".pdf  used on input line 319.
+<"../02_Figures/CAO1SM2".pdf, id=852, 646.415pt x 303.1325pt>
+File: "../02_Figures/CAO1SM2".pdf Graphic file (type pdf)
+<use "../02_Figures/CAO1SM2".pdf>
+Package pdftex.def Info: "../02_Figures/CAO1SM2".pdf  used on input line 319.
 (pdftex.def)             Requested size: 258.21019pt x 121.08434pt.
-<"../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/33_S1_All-Spec_Pos".pdf, id=853, 6
-46.415pt x 303.1325pt>
-File: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/33_S1_All-Spec_Pos".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/33_S1_All-Spec_Pos".pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/33_S1_All-
-Spec_Pos".pdf  used on input line 325.
+<"../02_Figures/CAO1SM3".pdf, id=853, 646.415pt x 303.1325pt>
+File: "../02_Figures/CAO1SM3".pdf Graphic file (type pdf)
+<use "../02_Figures/CAO1SM3".pdf>
+Package pdftex.def Info: "../02_Figures/CAO1SM3".pdf  used on input line 325.
 (pdftex.def)             Requested size: 258.21019pt x 121.08434pt.
-<"../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/45_S1_All-Spec_Pos".pdf, id=854, 6
-46.415pt x 303.1325pt>
-File: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/45_S1_All-Spec_Pos".pdf Graph
-ic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/45_S1_All-Spec_Pos".pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/45_S1_All-
-Spec_Pos".pdf  used on input line 330.
+<"../02_Figures/CAO1SM4".pdf, id=854, 646.415pt x 303.1325pt>
+File: "../02_Figures/CAO1SM4".pdf Graphic file (type pdf)
+<use "../02_Figures/CAO1SM4".pdf>
+Package pdftex.def Info: "../02_Figures/CAO1SM4".pdf  used on input line 330.
 (pdftex.def)             Requested size: 258.21019pt x 121.08434pt.
 
 Overfull \hbox (49.22992pt too wide) in paragraph at lines 311--333
@@ -1640,45 +1603,27 @@ Overfull \hbox (49.22992pt too wide) in paragraph at lines 311--333
 []$ $[]$ 
  []
 
-[34 <../02_Figures/02_CAO/LLGB/01_CAO/use in Sm/17_S1_All-Spec_Pos.pdf> <../02_
-Figures/02_CAO/LLGB/01_CAO/use in Sm/21_S1_All-Spec_Pos.pdf> <../02_Figures/02_
-CAO/LLGB/01_CAO/use in Sm/33_S1_All-Spec_Pos.pdf> <../02_Figures/02_CAO/LLGB/01
-_CAO/use in Sm/45_S1_All-Spec_Pos.pdf>]
-<"../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/17_S1_Poisson-2R-EqTol-lv".pdf,
- id=887, 639.38875pt x 517.935pt>
-File: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/17_S1_Poisson-2R-EqTol-lv"
-.pdf Graphic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/17_S1_Poisson-2R-EqTol-lv".
-pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/17_S1_P
-oisson-2R-EqTol-lv".pdf  used on input line 377.
+[34 <../02_Figures/CAO1SM1.pdf> <../02_Figures/CAO1SM2.pdf> <../02_Figures/CAO1
+SM3.pdf> <../02_Figures/CAO1SM4.pdf>]
+<"../02_Figures/CQOSM1".pdf, id=887, 639.38875pt x 517.935pt>
+File: "../02_Figures/CQOSM1".pdf Graphic file (type pdf)
+<use "../02_Figures/CQOSM1".pdf>
+Package pdftex.def Info: "../02_Figures/CQOSM1".pdf  used on input line 377.
 (pdftex.def)             Requested size: 234.73524pt x 190.14717pt.
-<"../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/21_S1_Poisson-2R-EqTol-lv".pdf,
- id=888, 639.38875pt x 517.935pt>
-File: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/21_S1_Poisson-2R-EqTol-lv"
-.pdf Graphic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/21_S1_Poisson-2R-EqTol-lv".
-pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/21_S1_P
-oisson-2R-EqTol-lv".pdf  used on input line 383.
+<"../02_Figures/CQOSM2".pdf, id=888, 639.38875pt x 517.935pt>
+File: "../02_Figures/CQOSM2".pdf Graphic file (type pdf)
+<use "../02_Figures/CQOSM2".pdf>
+Package pdftex.def Info: "../02_Figures/CQOSM2".pdf  used on input line 383.
 (pdftex.def)             Requested size: 234.73524pt x 190.14717pt.
-<"../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/33_S1_Poisson-2R-EqTol-lv".pdf,
- id=889, 639.38875pt x 517.935pt>
-File: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/33_S1_Poisson-2R-EqTol-lv"
-.pdf Graphic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/33_S1_Poisson-2R-EqTol-lv".
-pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/33_S1_P
-oisson-2R-EqTol-lv".pdf  used on input line 389.
+<"../02_Figures/CQOSM3".pdf, id=889, 639.38875pt x 517.935pt>
+File: "../02_Figures/CQOSM3".pdf Graphic file (type pdf)
+<use "../02_Figures/CQOSM3".pdf>
+Package pdftex.def Info: "../02_Figures/CQOSM3".pdf  used on input line 389.
 (pdftex.def)             Requested size: 234.73524pt x 190.14717pt.
-<"../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/45_S1_Poisson-2R-EqTol-lv".pdf,
- id=890, 639.38875pt x 476.78125pt>
-File: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/45_S1_Poisson-2R-EqTol-lv"
-.pdf Graphic file (type pdf)
-<use "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/45_S1_Poisson-2R-EqTol-lv".
-pdf>
-Package pdftex.def Info: "../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/45_S1_P
-oisson-2R-EqTol-lv".pdf  used on input line 394.
+<"../02_Figures/CQOSM4".pdf, id=890, 639.38875pt x 476.78125pt>
+File: "../02_Figures/CQOSM4".pdf Graphic file (type pdf)
+<use "../02_Figures/CQOSM4".pdf>
+Package pdftex.def Info: "../02_Figures/CQOSM4".pdf  used on input line 394.
 (pdftex.def)             Requested size: 234.73524pt x 175.03857pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 375--397
@@ -1690,10 +1635,8 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 375--397
 []$ $[]$ 
  []
 
-[35 <../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/17_S1_Poisson-2R-EqTol-lv.pd
-f> <../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/21_S1_Poisson-2R-EqTol-lv.pdf
-> <../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/33_S1_Poisson-2R-EqTol-lv.pdf>
- <../02_Figures/02_CAO/LLGB/03_CQO_2r/use in SM/45_S1_Poisson-2R-EqTol-lv.pdf>]
+[35 <../02_Figures/CQOSM1.pdf> <../02_Figures/CQOSM2.pdf> <../02_Figures/CQOSM3
+.pdf> <../02_Figures/CQOSM4.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1753,8 +1696,8 @@ Package rerunfilecheck Info: File `MT_Main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 25245 strings out of 492982
- 478971 string characters out of 6134896
+ 25241 strings out of 492982
+ 475538 string characters out of 6134896
  596878 words of memory out of 5000000
  27872 multiletter control sequences out of 15000+600000
  603779 words of font info for 401 fonts, out of 8000000 for 9000
@@ -1769,7 +1712,7 @@ urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MT_Main.pdf (49 pages, 1442814 bytes).
+Output written on MT_Main.pdf (49 pages, 1442061 bytes).
 PDF statistics:
  1099 PDF objects out of 1200 (max. 8388607)
  968 compressed objects within 10 object streams
